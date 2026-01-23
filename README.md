@@ -1,111 +1,136 @@
-Opt Folder – RoCEv2 on Cisco ACI
-This opt directory contains multiple automation examples and tools for configuring
-RoCEv2 QoS and related ACI policy using different technologies:
+# RoCEv2 QoS Automation for Cisco ACI
 
-Ansible
-Terraform (stand‑alone and module‑based)
-Python
-NAC Terraform example
-Postman / Bruno collection
-Use this README as a map of what lives where and what each file is for.
+This repository provides a complete, automation-first approach to deploying **RoCEv2 (RDMA over Converged Ethernet v2) Quality of Service policies** on **Cisco ACI fabrics**.
 
-Top‑Level Files
-README.md
-This document. High‑level description of the opt folder layout and usage.
-1. Ansible Automation – ansible/
-Ansible playbooks and inventory for pushing RoCEv2 QoS‑related changes to ACI.
+The project demonstrates how lossless Ethernet for AI and GPU workloads can be configured, validated, and reset **consistently and repeatably** using Infrastructure-as-Code (IaC) and API-driven tools.
 
-Files:
+It is designed for **AI-ready data centres**, **multi-fabric environments**, and **Cisco Live / customer demo scenarios**.
 
-ansible/inventory.ini
+---
 
-Ansible inventory file. Defines the APIC/ACI hosts and groups that the playbooks
-will target.
-ansible/group_vars/apic.yml
+## 🚀 Key Capabilities
 
-Group variables for the APIC hosts defined in inventory.ini.
+- Automated deployment of RoCEv2 QoS policies (No-Drop, ECN, WRED, PFC)
+- Support for single or multiple ACI fabrics
+- Idempotent configuration using Terraform
+- API-level control for apply and rollback
+- Safe reset / destroy workflows for lab and demo environments
+- Suitable for production, PoC, and Cisco Live labs
 
-Typically includes APIC URL, credentials, and common settings (e.g. tenant name,
-QoS parameters, etc.).
-ansible/playbooks/rocev2_qos.yml
+---
 
-Main playbook to configure RoCEv2 QoS on ACI using Ansible.
+## 🧰 Technologies Used
 
-Run this to apply the desired QoS configuration.
-ansible/playbooks/reset_qos.yml
+This repository intentionally demonstrates multiple automation approaches, allowing engineers to choose the right tool for their environment:
 
-Playbook to reset or roll back the RoCEv2 QoS settings to a baseline/clean
-state.
-Typical usage:
+- **Terraform (Custom Modules)** – Direct APIC REST-based configuration
+- **Terraform (Netascode NAC)** – Declarative, YAML-driven ACI policy management
+- **Python** – Direct APIC REST API scripting for apply and cleanup
+- **Ansible** – Multi-APIC orchestration and reset workflows
+- **Bruno / API Clients** – Manual and automated REST API testing
+- **Nexus Dashboard** – Telemetry and traffic behaviour visualisation (optional)
 
-bash
+---
 
-cd opt/ansible
-ansible-playbook -i inventory.ini playbooks/rocev2_qos.yml
-ansible-playbook -i inventory.ini playbooks/reset_qos.yml
-2. Bruno / Postman Collection – Bruno/
-Pre‑built API workflow for APIC.
+## 📁 Repository Structure
 
-File:
+```text
+.
+├── terraform/
+│   ├── main.tf
+│   ├── variables.tf
+│   ├── providers.tf
+│   └── modules/
+│       └── rocev2_qos/
+│           └── main.tf
+│
+├── nac/
+│   └── rocev2_qos.yaml
+│
+├── python/
+│   └── rocev2_qos.py
+│
+├── ansible/
+│   ├── apply_qos.yml
+│   └── reset_qos.yml
+│
+├── docs/
+│   └── CiscoLive_RoCEv2_QoS_ACI_Automation.md
 
-Bruno/RoCEv2 ACI - Full Postman Collection.postman_collection.json
-A full Postman/Bruno collection for ACI RoCEv2 configuration and verification via REST API calls. Import this into Postman or Bruno to run the sequence of API requests against APIC.
-3. NAC Terraform Example – nac/nac-aci-simple-example/
-Self‑contained Terraform example that uses NAC‑style YAML data for ACI configuration.
 
-Core files:
+│
+└── README.md
 
-nac/nac-aci-simple-example/README.md – readme specific to this example
-nac/nac-aci-simple-example/main.tf – main Terraform file
-nac/nac-aci-simple-example/.gitignore
-nac/nac-aci-simple-example/apic-cookie.txt
-Data:
+---
 
-nac/nac-aci-simple-example/data/defaults.nac.yaml
-nac/nac-aci-simple-example/data/qos_rocev2.nac.yaml
-nac/nac-aci-simple-example/data/tenant_DEV.nac.yaml
-Scripts:
+## ⚙️ What This Configures
 
-nac/nac-aci-simple-example/scripts/reset_qos.sh – resets or removes QoS config
-Terraform state & lock files:
+The automation configures the following **RoCEv2-specific QoS components** in Cisco ACI:
 
-.terraform.lock.hcl, terraform.tfstate, terraform.tfstate.backup
+- Priority queue for RDMA traffic (typically mapped to **CoS 3**)
+- No-drop QoS class with **Priority Flow Control (PFC)** enabled
+- **Explicit Congestion Notification (ECN)** marking for congestion signalling
+- **WRED** thresholds tuned for RoCEv2 traffic behaviour
+- Consistent QoS policy enforcement across one or more ACI fabrics
 
-4. Python Script – Python/
-Python/rocev2_qos.py
-Python script for configuring or validating RoCEv2 QoS via the ACI API.
-5. Terraform – tf/terraform/
-Conventional Terraform layout for ACI / RoCEv2 configuration.
+These components collectively enable **lossless Ethernet** behaviour required for AI and GPU workloads.
 
-Top‑level files:
+---
 
-main.tf – main Terraform configuration
-variables.tf – input variables
-LICENSE.txt
-apic-cookie.txt
-terraform_1.14.0_linux_amd64.zip
-scripts/reset_qos.sh
-.terraform.lock.hcl
-terraform.tfstate
-terraform.tfstate.backup
-Module – modules/rocev2_qos/:
+## 🧪 Typical Use Cases
 
-main.tf – resources implementing the QoS logic
-variables.tf – inputs for the module
-Providers – .terraform/providers/:
+- Validating AI / GPU fabric readiness
+- Enforcing QoS consistency across multiple ACI fabrics
+- Pre-production testing and safe rollback
+- Cisco Live and dCloud lab environments
+- Customer demonstrations using real traffic generators
 
-ciscodevnet/aci/... – Cisco ACI provider v2.16.0
-hashicorp/null/... – HashiCorp null provider v3.2.4
-Example:
+---
 
-bash
+## ▶️ Getting Started (Terraform Example)
 
-cd opt/tf/terraform
+From the Terraform root directory:
+
+```bash
+cd terraform
 terraform init
 terraform plan
 terraform apply
-./scripts/reset_qos.sh
-6. General Notes
-Credentials & cookies: demo/placeholder only — don’t commit real secrets
-Terraform state: prefer remote state for production
-Multiple automation paths: choose Ansible, Terraform, Python, or API collections depending on workflow
+
+## To remove the configuration and return the fabric to its previous state:
+
+terraform destroy
+
+## 🔁 Reset & Cleanup
+
+For lab, demo, and test environments, the repository includes safe reset and cleanup workflows using:
+
+  - Terraform destroy operations
+  - Python-based APIC REST API reset scripts
+  - Ansible playbooks for multi-APIC cleanup
+
+This ensures environments can be quickly reused without manual reconfiguration.
+
+## 📘 Documentation
+
+Detailed walkthroughs, explanations, and lab guides are provided in:
+docs/CiscoLive_RoCEv2_QoS_ACI_Automation.md
+
+These documents are suitable for:
+ - Self-paced learning
+ - Instructor-led workshops
+ - Cisco Live and customer-facing demonstrations
+
+## ⚠️ Disclaimer
+
+This repository is provided for educational, demonstration, and reference purposes only.
+  - Always validate configurations in a lab before production deployment
+  - QoS behaviour may vary depending on ACI software version, hardware platform, and traffic patterns
+  - No warranties or support commitments are implied
+
+## 👤 Author
+
+David Easton
+Cisco Systems – Data Center & AI Networking
+
+
