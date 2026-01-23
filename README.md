@@ -60,8 +60,7 @@ This repository intentionally demonstrates multiple automation approaches, allow
 
 │
 └── README.md
-
----
+```
 
 ## ⚙️ What This Configures
 
@@ -100,6 +99,7 @@ terraform apply
 ## To remove the configuration and return the fabric to its previous state:
 
 terraform destroy
+```
 
 ## 🔁 Reset & Cleanup
 
@@ -132,5 +132,6 @@ This repository is provided for educational, demonstration, and reference purpos
 
 David Easton
 Cisco Systems – Data Center & AI Networking
+
 
 
