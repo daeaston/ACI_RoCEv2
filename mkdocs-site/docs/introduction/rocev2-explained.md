@@ -61,4 +61,4 @@ By automating these configurations, you can ensure consistent, repeatable deploy
 
 ## Next Steps
 
-Proceed to [Prerequisites](../lab2-terraform-nac/prerequisites.md).
+Proceed to [Prerequisites](../introduction/prerequisites.md).
