@@ -58,3 +58,7 @@ Cisco ACI provides comprehensive support for RoCEv2 with:
 - **CoS Mapping** - Class of Service prioritization
 
 By automating these configurations, you can ensure consistent, repeatable deployments across multiple ACI fabrics.
+
+## Next Steps
+
+Proceed to [Prerequisites](../lab2-terraform-nac/prerequisites.md).
