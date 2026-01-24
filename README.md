@@ -1,137 +1,82 @@
-# RoCEv2 QoS Automation for Cisco ACI
+# DEVWKS - RoCEv2 QoS Automation on Cisco ACI Workshop
 
-This repository provides a complete, automation-first approach to deploying **RoCEv2 (RDMA over Converged Ethernet v2) Quality of Service policies** on **Cisco ACI fabrics**.
+## Overview
 
-The project demonstrates how lossless Ethernet for AI and GPU workloads can be configured, validated, and reset **consistently and repeatably** using Infrastructure-as-Code (IaC) and API-driven tools.
+This workshop guides you through implementing and automating RoCEv2 (RDMA over Converged Ethernet version 2) QoS policies on Cisco Application Centric Infrastructure (ACI) using multiple automation approaches.
 
-It is designed for **AI-ready data centres**, **multi-fabric environments**, and **Cisco Live / customer demo scenarios**.
+### What You'll Learn
 
----
+- Understanding RoCEv2 and its importance in modern data centers
+- Implementing QoS policies for RoCEv2 on Cisco ACI
+- Automating ACI configuration using:
+  - Terraform with custom modules
+  - Terraform with NAC (Network as Code)
+  - Python with ACI SDK
+  - Bruno API client for REST API interactions
+  - Ansible playbooks for orchestration
 
-## 🚀 Key Capabilities
+### Workshop Structure
 
-- Automated deployment of RoCEv2 QoS policies (No-Drop, ECN, WRED, PFC)
-- Support for single or multiple ACI fabrics
-- Idempotent configuration using Terraform
-- API-level control for apply and rollback
-- Safe reset / destroy workflows for lab and demo environments
-- Suitable for production, PoC, and Cisco Live labs
+1. **Introduction** - Learn about RoCEv2, lab environment, and prerequisites
+2. **Lab 1** - Terraform Custom Module approach
+3. **Lab 2** - Terraform NAC approach
+4. **Lab 3** - Python automation
+5. **Lab 4** - Bruno API automation
+6. **Lab 5** - Ansible Playbooks automation
 
----
+## Local Development
 
-## 🧰 Technologies Used
+### Prerequisites
 
-This repository intentionally demonstrates multiple automation approaches, allowing engineers to choose the right tool for their environment:
+- Python 3.8 or higher
+- pip package manager
 
-- **Terraform (Custom Modules)** – Direct APIC REST-based configuration
-- **Terraform (Netascode NAC)** – Declarative, YAML-driven ACI policy management
-- **Python** – Direct APIC REST API scripting for apply and cleanup
-- **Ansible** – Multi-APIC orchestration and reset workflows
-- **Bruno / API Clients** – Manual and automated REST API testing
-- **Nexus Dashboard** – Telemetry and traffic behaviour visualisation (optional)
+### Setup
 
----
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/DEVWKS-ACI-RoCEv2.git
+   cd DEVWKS-ACI-RoCEv2
+   ```
 
-## 📁 Repository Structure
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-```text
-.
-├── terraform/
-│   ├── main.tf
-│   ├── variables.tf
-│   ├── providers.tf
-│   └── modules/
-│       └── rocev2_qos/
-│           └── main.tf
-│
-├── nac/
-│   └── rocev2_qos.yaml
-│
-├── python/
-│   └── rocev2_qos.py
-│
-├── ansible/
-│   ├── apply_qos.yml
-│   └── reset_qos.yml
-│
-├── docs/
-│   └── CiscoLive_RoCEv2_QoS_ACI_Automation.md
+3. Serve the documentation locally:
+   ```bash
+   mkdocs serve
+   ```
 
+4. Open your browser to `http://localhost:8000`
 
-│
-└── README.md
-```
+## Building the Site
 
-## ⚙️ What This Configures
-
-The automation configures the following **RoCEv2-specific QoS components** in Cisco ACI:
-
-- Priority queue for RDMA traffic (typically mapped to **CoS 3**)
-- No-drop QoS class with **Priority Flow Control (PFC)** enabled
-- **Explicit Congestion Notification (ECN)** marking for congestion signalling
-- **WRED** thresholds tuned for RoCEv2 traffic behaviour
-- Consistent QoS policy enforcement across one or more ACI fabrics
-
-These components collectively enable **lossless Ethernet** behaviour required for AI and GPU workloads.
-
----
-
-## 🧪 Typical Use Cases
-
-- Validating AI / GPU fabric readiness
-- Enforcing QoS consistency across multiple ACI fabrics
-- Pre-production testing and safe rollback
-- Cisco Live and dCloud lab environments
-- Customer demonstrations using real traffic generators
-
----
-
-## ▶️ Getting Started (Terraform Example)
-
-From the Terraform root directory:
+To build the static site:
 
 ```bash
-cd terraform
-terraform init
-terraform plan
-terraform apply
-
-## To remove the configuration and return the fabric to its previous state:
-
-terraform destroy
+mkdocs build
 ```
 
-## 🔁 Reset & Cleanup
+The built site will be in the `site/` directory.
 
-For lab, demo, and test environments, the repository includes safe reset and cleanup workflows using:
+## Deployment
 
-  - Terraform destroy operations
-  - Python-based APIC REST API reset scripts
-  - Ansible playbooks for multi-APIC cleanup
+This site is automatically deployed to GitHub Pages when changes are pushed to the main branch using GitHub Actions.
 
-This ensures environments can be quickly reused without manual reconfiguration.
+## Contributing
 
-## 📘 Documentation
+This workshop material was created for Cisco Live / DevNet events. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-Detailed walkthroughs, explanations, and lab guides are provided in:
-docs/CiscoLive_RoCEv2_QoS_ACI_Automation.md
-
-These documents are suitable for:
- - Self-paced learning
- - Instructor-led workshops
- - Cisco Live and customer-facing demonstrations
-
-## ⚠️ Disclaimer
-
-This repository is provided for educational, demonstration, and reference purposes only.
-  - Always validate configurations in a lab before production deployment
-  - QoS behaviour may vary depending on ACI software version, hardware platform, and traffic patterns
-  - No warranties or support commitments are implied
-
-## 👤 Author
+## Author
 
 David Easton
-Cisco Systems – Data Center & AI Networking
 
+## License
 
+Copyright © 2024-2026 Cisco Systems, Inc.
 
+## Acknowledgments
+
+Special thanks to the Cisco ACI and DevNet teams for their support in creating this workshop.
