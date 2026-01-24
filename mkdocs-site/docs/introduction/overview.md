@@ -25,3 +25,7 @@ Upon completing this lab, participants will be able to:
 ---
 
 This environment mimics a dual-fabric deployment, frequently utilized for AI workloads requiring robust RoCEv2 QoS.
+
+## Next Steps
+
+Proceed to [RoCEv2 Explained](../lab2-terraform-nac/rocev2-explained.md)
