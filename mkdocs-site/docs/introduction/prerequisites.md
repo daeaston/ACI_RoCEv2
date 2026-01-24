@@ -45,3 +45,7 @@ The lab environment provides all necessary software pre-installed:
 
 !!! tip "Lab Flexibility"
     Each lab is self-contained. You can complete them in order or jump to specific sections based on your interests and time availability.
+
+## Next Steps
+
+Proceed to [Getting started](../introduction/getting-started.md).
