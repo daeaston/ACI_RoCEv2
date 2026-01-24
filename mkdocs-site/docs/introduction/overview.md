@@ -28,4 +28,4 @@ This environment mimics a dual-fabric deployment, frequently utilized for AI wor
 
 ## Next Steps
 
-Proceed to [RoCEv2 Explained](../lab2-terraform-nac/rocev2-explained.md)
+Proceed to [RoCEv2 Explained](../introduction/rocev2-explained.md)
