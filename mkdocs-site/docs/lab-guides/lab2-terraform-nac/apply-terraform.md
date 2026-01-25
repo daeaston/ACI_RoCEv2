@@ -15,13 +15,13 @@ In this final step of Lab 2, you will deploy the NAC YAML configuration to both 
 ![Apic Simulators](../../assets/images/image009.png)
 
 
-From each APIC, navigate to Fabric -> Access Policies -> Policies -> Global -> QOS Class -> Level2, where the default ‘Best Effort’ QoS settings will then be displayed on the right:
+- From each APIC, navigate to **Fabric -> Access Policies -> Policies -> Global -> QOS Class -> Level2**, where the default **‘Best Effort’** QoS settings will then be displayed on the right:
 
 
 ![Access Policies](../../assets/images/image012.png)
 
 
-(Optional) – Right Click on one of the Browser Tabs and select ‘Add tab to new split view’ to get the view of both APIC’s:
+- (Optional) – Right Click on one of the Browser Tabs and select ‘Add tab to new split view’ to get the view of both APIC’s:
 
 
 ![Split View](../../assets/images/image013.png)
