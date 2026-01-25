@@ -2,7 +2,7 @@
 
 This comprehensive lab manual provides a structured, end-to-end workshop for configuring and automating RoCEv2 QoS across ACI fabrics. It leverages a multi-workflow approach, demonstrating automation using Terraform (Custom modules and Netascode NAC), Python, Bruno, and Ansible:
 
-- [ACI Policy Model Guide](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/policy-model-guide/b-Cisco-ACI-Policy-Model-Guide.html)
+[ACI Policy Model Guide](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/policy-model-guide/b-Cisco-ACI-Policy-Model-Guide.html)
 
 This guide is designed for Cisco Live DevNet, dCloud, CPOC, or customer-facing training environments, aiming to equip participants with practical skills for building modern, lossless AI-ready transport environments.
 
