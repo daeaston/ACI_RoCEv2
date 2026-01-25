@@ -6,7 +6,7 @@ In this final section, you will create and execute a Python script that deploys 
 
 # Login to Both APICs
 
-Login to each APIC in the same way as has been previously done via the Terraform exercises to validate this script working in the exact same way, with each screen showing the Level 2 QoS configuration:
+- Login to each APIC in the same way as has been previously done via the Terraform exercises to validate this script working in the exact same way, with each screen showing the Level 2 QoS configuration:
 
 ![apic](../../assets/images/image013.png)
 
