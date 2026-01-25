@@ -149,7 +149,7 @@ Your directory should now look like this:
 /opt/tf/terraform
 ├── main.tf
 ├── variables.tf
-└── modules/
+└── modules/              # (Created in next step)   
     └── rocev2_qos/       # (Created in next step)
 ```
 
