@@ -26,7 +26,7 @@ python rocev2_qos.py apply
 - Run the Python script to reset the configuration: **python rocev2_qos.py destroy**
 
 ```bash
-python rocev2_qos.py apply
+python rocev2_qos.py destroy
 ```
 
 - Observe the APIC GUI reverting to its normal state.
