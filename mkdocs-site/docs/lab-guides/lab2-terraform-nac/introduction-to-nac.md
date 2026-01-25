@@ -18,7 +18,7 @@ This section demonstrates using the Netascode Terraform module to deploy an equi
 In this model, the YAML file defines what the RoCEv2 QoS policy should look like, while Netascode and Terraform act as the engine that translates that intent into actual APIC configuration:
 
 !!! warning "Please ensure Terraform is already installed from Lab 1"
-    If you have gone straight to this Lab without having completed Lab 1, please go straight to the 'Install Terraform' section.
+    If you have gone straight to this Lab without having completed Lab 1, please go straight to the 'Install Terraform' section from Lab 1.
 
 ## Next Steps
 
