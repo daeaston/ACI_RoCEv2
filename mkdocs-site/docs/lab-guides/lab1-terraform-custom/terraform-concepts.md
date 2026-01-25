@@ -10,9 +10,8 @@ The **root module** is the main Terraform configuration directory where you run 
 
 - `main.tf` - Primary resource definitions and module calls
 - `variables.tf` - Input variable declarations
-- `terraform.tfvars` - Variable values
-- `outputs.tf` - Output value declarations
-- `providers.tf` - Provider configuration
+- `terraform.tfstate` - Infrastructure state snapshot
+- `terraform.tfstate.backup` - Previous state file backup
 
 ### Purpose
 
@@ -56,8 +55,6 @@ modules/
 └── rocev2_qos/
     ├── main.tf          # Resource definitions
     ├── variables.tf     # Input variables
-    ├── outputs.tf       # Output values
-    └── README.md        # Module documentation
 ```
 
 ## Our Lab Architecture
