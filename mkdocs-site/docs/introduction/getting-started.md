@@ -74,7 +74,7 @@ This method is better if you prefer a direct session instead of going via the Wo
 The 'tools' VM is required for all Terraform and Ansible exercises to paste scripts into the VI editor. 
 
 !!! Warning "Script Copy & Paste"
-    These Scripts must be fully copied and pasted from the beginning to the end i.e. not in sections as there will otherwise be indentation errors and will not work.
+    These Scripts must be fully copied and pasted from the beginning to the end i.e. not in sections as there will otherwise be indentation errors and will not work. Ctrl+C and Ctrl+V may also not work so please instead click on the Right Mouse Button as an alternative.
 
 !!! tip "Terminal Access"
     You can open multiple terminal windows for different tasks. This is helpful when working with both APIC clusters simultaneously.
