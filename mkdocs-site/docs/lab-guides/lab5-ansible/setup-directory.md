@@ -2,7 +2,7 @@
 
 ## Create Ansible Directory
 
-Log in to the tools machine and create the `ansible` directory under `/opt/` then move to it:
+- Log in to the tools machine and create the `ansible` directory under `/opt/` then move to it:
 
 ```bash
 mkdir /opt/ansible
@@ -11,7 +11,7 @@ cd /opt/ansible
 
 ## Create Subdirectories
 
-Create the following subdirectories `group_vars` and `playbooks` underneath `ansible`:
+- Create the following subdirectories `group_vars` and `playbooks` underneath `ansible`:
 
 ```bash
 mkdir group_vars
@@ -39,3 +39,4 @@ This structure follows Ansible best practices:
 - **playbooks/** - Contains the automation playbooks
 
 Proceed to [Inventory File](../lab5-ansible/inventory-file.md).
+
