@@ -6,7 +6,7 @@ The `group_vars` directory contains variable files that are automatically loaded
 
 ## Navigate to group_vars
 
-Navigate to the group_vars directory:
+- Navigate to the group_vars directory:
 
 ```bash
 cd group_vars/
@@ -14,7 +14,7 @@ cd group_vars/
 
 ## Create the apic.yml File
 
-Create the `apic.yml` file by executing `vi apic.yml` and pasting the following content:
+- Create the `apic.yml` file by executing `vi apic.yml` and pasting the following content:
 
 ```bash
 vi apic.yml
@@ -55,3 +55,4 @@ cat apic.yml
 This approach allows us to use a single variable definition that works for multiple APIC controllers without hardcoding specific URLs.
 
 Proceed to [Apply QoS Playbook](../lab5-ansible/apply-qos-playbook.md).
+
