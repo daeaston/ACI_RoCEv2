@@ -79,6 +79,6 @@ This structure allows you to:
     - Document your modules thoroughly
     - Version your modules for production use
 
-## Next Steps
+## Next Steps DEE
 
 Now that you understand module architecture, proceed to [Building the Root Module](root-module.md) to create your configuration.
