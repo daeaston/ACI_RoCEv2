@@ -148,10 +148,7 @@ Your directory should now look like this:
 ```
 /opt/tf/terraform
 ├── main.tf
-├── providers.tf
 ├── variables.tf
-├── terraform.tfvars
-├── outputs.tf
 └── modules/
     └── rocev2_qos/       # (Created in next step)
 ```
