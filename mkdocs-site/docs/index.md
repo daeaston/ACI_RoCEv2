@@ -81,9 +81,6 @@ This comprehensive lab manual provides a structured, end-to-end workshop for con
 
 This guide is designed for Cisco Live DevNet, dCloud, CPOC, or customer-facing training environments, aiming to equip participants with practical skills for building modern, lossless AI-ready transport environments.
 
-!!! note "Environment Limitations"
-    The demonstration environment is a simulated environment and there is no actual data plane, therefore the fabrics will not establish OSPF/BGP adjacency. All configurations will be lost after a reboot of the APIC simulators. A demonstration of this completed configuration in a real environment will be shown at the end with real traffic.
-
 ---
 
 ## Getting Started
