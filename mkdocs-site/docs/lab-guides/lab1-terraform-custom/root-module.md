@@ -146,7 +146,7 @@ cat variables.tf
 Your directory should now look like this:
 
 ```
-/opt/tf/
+/opt/tf/terraform
 ├── main.tf
 ├── providers.tf
 ├── variables.tf
