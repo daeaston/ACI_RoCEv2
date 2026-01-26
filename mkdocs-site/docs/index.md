@@ -25,7 +25,7 @@
 
 ### Lab Exercises
 
-#### [Lab 1: Terraform Automation (Custom Module)](lab-guides/lab1-terraform-custom/install-terraform.md)
+#### [Lab 1: Terraform Classic)](lab-guides/lab1-terraform-custom/introduction-to-terraform.md)
 1. [Introduction to Terraform](lab-guides/lab1-terraform-custom/introduction-to-terraform.md)
 2. [Install Terraform on Tools Machine](lab-guides/lab1-terraform-custom/install-terraform.md)
 3. [Terraform Concepts: Root vs. Child Modules](lab-guides/lab1-terraform-custom/terraform-concepts.md)
@@ -34,7 +34,7 @@
 6. [Script Integration & Clean-Up](lab-guides/lab1-terraform-custom/script-integration.md)
 7. [Opening APIC GUI's and applying Terraform Commands](lab-guides/lab1-terraform-custom/apply-terraform.md)
 
-#### [Lab 2: Terraform NAC Approach](lab-guides/lab2-terraform-nac/nac-setup.md)
+#### [Lab 2: Terraform NAC](lab-guides/lab2-terraform-nac/introduction-to-nac.md)
 1. [Introduction to NAC](lab-guides/lab2-terraform-nac/introduction-to-nac.md)
 2. [NAC Environment Setup](lab-guides/lab2-terraform-nac/nac-setup.md)
 3. [Understanding the Root main.tf](lab-guides/lab2-terraform-nac/root-main-tf.md)
@@ -43,18 +43,18 @@
 6. [NAC Script Integration](lab-guides/lab2-terraform-nac/script-integration.md)
 7. [Opening APIC GUI's and applying Terraform Commands](lab-guides/lab2-terraform-nac/apply-terraform.md)
 
-#### [Lab 3: Python Automation](lab-guides/lab3-python/verify-python.md)
+#### [Lab 3: Python](lab-guides/lab3-python/python-overview.md)
 1. [Python Overview](lab-guides/lab3-python/python-overview.md)
 2. [Verifying Python](lab-guides/lab3-python/verify-python.md)
 3. [Executing the Python Script](lab-guides/lab3-python/execute-script.md)
 
-#### [Lab 4: Bruno API Automation](lab-guides/lab4-bruno/import-collection.md)
+#### [Lab 4: Bruno](lab-guides/lab4-bruno/bruno-overview.md)
 1. [Bruno Overview](lab-guides/lab4-bruno/bruno-overview.md)
 2. [Import Collection](lab-guides/lab4-bruno/import-collection.md)
 3. [Configure Environment](lab-guides/lab4-bruno/configure-environment.md)
 4. [Create QoS Policy](lab-guides/lab4-bruno/create-qos-policy.md)
 
-#### [Lab 5: Ansible Playbooks Automation](lab-guides/lab5-ansible/ansible-overview.md)
+#### [Lab 5: Ansible](lab-guides/lab5-ansible/ansible-overview.md)
 1. [Ansible Overview](lab-guides/lab5-ansible/ansible-overview.md)
 2. [Setup Directory Structure](lab-guides/lab5-ansible/setup-directory.md)
 3. [Inventory File](lab-guides/lab5-ansible/inventory-file.md)
