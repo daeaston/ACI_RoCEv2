@@ -124,7 +124,7 @@ nav:
     - RoCEv2 Explained: introduction/rocev2-explained.md
     - Prerequisites: introduction/prerequisites.md
     - Getting Started: introduction/getting-started.md
-  - Lab 1 - Terraform Custom Module:
+  - Lab 1 - Terraform Classic:
     - Introduction to Terraform: lab-guides/lab1-terraform-custom/introduction-to-terraform.md
     - Install Terraform: lab-guides/lab1-terraform-custom/install-terraform.md
     - Terraform Concepts: lab-guides/lab1-terraform-custom/terraform-concepts.md
@@ -140,16 +140,16 @@ nav:
     - Understanding YAML: lab-guides/lab2-terraform-nac/understanding-yaml.md
     - Script Integration: lab-guides/lab2-terraform-nac/script-integration.md
     - Apply Terraform: lab-guides/lab2-terraform-nac/apply-terraform.md
-  - Lab 3 - Python Automation:
+  - Lab 3 - Python:
     - Python Overview: lab-guides/lab3-python/python-overview.md
     - Verify Python: lab-guides/lab3-python/verify-python.md
     - Execute Script: lab-guides/lab3-python/execute-script.md
-  - Lab 4 - Bruno API:
+  - Lab 4 - Bruno:
     - Bruno Overview: lab-guides/lab4-bruno/bruno-overview.md
     - Import Collection: lab-guides/lab4-bruno/import-collection.md
     - Configure Environment: lab-guides/lab4-bruno/configure-environment.md
     - Apply QoS Policy: lab-guides/lab4-bruno/apply-qos-policy.md
-  - Lab 5 - Ansible Playbooks:
+  - Lab 5 - Ansible:
     - Ansible Overview: lab-guides/lab5-ansible/ansible-overview.md
     - Setup Directory Structure: lab-guides/lab5-ansible/setup-directory.md
     - Inventory File: lab-guides/lab5-ansible/inventory-file.md
