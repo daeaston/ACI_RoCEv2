@@ -128,43 +128,20 @@
 
 /* ---- TOP NAV: Horizontal scrolling for tabs ---- */
 
-/* Enable horizontal scroll on tabs container */
+/* Enable horizontal scroll on tabs */
 .md-tabs {
   overflow-x: auto !important;
   overflow-y: hidden !important;
   -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
 }
 
 .md-tabs__list {
-  display: flex !important;
   flex-wrap: nowrap !important;
   width: max-content !important;
-  gap: 0;
 }
 
-/* Reduce tab padding to fit more items */
+/* Slightly reduce tab padding */
 .md-tabs__link {
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
-  font-size: 0.9rem !important;
-  white-space: nowrap;
-}
-
-/* Ensure scrollbar is visible on hover */
-.md-tabs::-webkit-scrollbar {
-  height: 6px;
-}
-
-.md-tabs::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.md-tabs::-webkit-scrollbar-thumb {
-  background: var(--cisco-blue);
-  border-radius: 3px;
-}
-
-.md-tabs::-webkit-scrollbar-thumb:hover {
-  background: var(--cisco-dark-blue);
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
 }
