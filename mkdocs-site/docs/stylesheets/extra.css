@@ -126,22 +126,34 @@
   font-style: italic;
 }
 
-/* ---- TOP NAV: Horizontal scrolling for tabs ---- */
+/* ---- TOP NAV: make tabs horizontally scrollable (Material v8/v9 compatible) ---- */
 
-/* Enable horizontal scroll on tabs */
-.md-tabs {
+/* 1) Enable horizontal scrolling on the tabs bar */
+.md-tabs,
+.md-tabs__container,
+.md-tabs__inner {
   overflow-x: auto !important;
   overflow-y: hidden !important;
   -webkit-overflow-scrolling: touch;
 }
 
+/* 2) Keep tabs on one line and allow the list to be wider than the screen */
 .md-tabs__list {
   flex-wrap: nowrap !important;
   width: max-content !important;
 }
 
-/* Slightly reduce tab padding */
+/* 3) Slightly tighten tab padding so you need less scrolling */
 .md-tabs__link {
-  padding-left: 0.75rem !important;
-  padding-right: 0.75rem !important;
+  padding-left: 0.55rem !important;
+  padding-right: 0.55rem !important;
+}
+
+/* 4) IMPORTANT: for now, DO NOT hide scrollbars while testing */
+/* (Once confirmed working, we can hide them again cleanly) */
+
+/* Terraform success output (balanced green) */
+.tf-success {
+  color: #43a047;   /* mid green: between Material dark and terminal bright */
+  font-weight: 700;
 }
