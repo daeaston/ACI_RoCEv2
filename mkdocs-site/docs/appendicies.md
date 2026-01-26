@@ -274,7 +274,214 @@ if __name__ == "__main__":
 
 ## Appendix C  - Bruno .json Script Explaination
 
-This file consolidates all 3 POST Commands as described in Section 4:
+This Bruno/Postman collection automates the configuration of RoCEv2 Quality of Service (QoS) on Cisco ACI APIC controllers through a REST API interface. It provides three sequential API operations:
+
+1. Authenticate to the APIC and obtain a session token.
+2. Apply a RoCEv2 no-drop QoS policy (WRED + ECN + PFC on CoS 3).
+3. Reset the QoS policy to default tail-drop behavior.
+
+The collection uses environment variables for flexible deployment and automatically captures authentication tokens for subsequent requests.
+
+Key API Concepts Used
+
+- RESTful API authentication using JSON payloads
+- Session-based authentication with APIC-cookie token management
+- XML payload submission for QoS configuration
+- Collection variables for token persistence across requests
+- Postman/Bruno test scripts for automated token extraction
+- Reusable base URL configuration for multi-fabric deployments
+
+Basic Collection Configuration
+
+Collection Variables
+
+- **APIC-cookie**: Stores the session authentication token (automatically populated)
+- **base_url**: The target APIC controller URL (e.g., `https://apic1-a.corp.pseudoco.com`)
+
+These variables enable the collection to be reused across multiple APIC fabrics by simply updating the base_url.
+
+Request 1: Login to APIC (login())
+
+Objective
+
+Authenticates to the APIC controller and retrieves a session token for subsequent API operations.
+
+How It Works
+
+- **Method**: POST
+- **Endpoint**: `{{base_url}}/api/aaaLogin.json`
+- **Content-Type**: application/json
+- **Payload Structure**:
+  ```json
+  {
+    "aaaUser": {
+      "attributes": {
+        "name": "admin",
+        "pwd": "C1sco12345"
+      }
+    }
+  }
+  ```
+
+Authentication Process
+
+1. Sends credentials in JSON format to the APIC login endpoint.
+2. APIC validates credentials and returns a session token.
+3. The test script automatically extracts the token from the response.
+4. Token is stored in the `APIC-cookie` collection variable.
+
+Test Script Functionality
+
+The embedded JavaScript test script performs automated token extraction:
+
+```javascript
+var jsonData = pm.response.json();
+var token = jsonData.imdata[0].aaaLogin.attributes.token;
+pm.collectionVariables.set("APIC-cookie", token);
+```
+
+This eliminates manual token copying and enables seamless API workflow automation.
+
+Role in the Collection
+
+All subsequent requests depend on this authentication step. The captured token is automatically injected into subsequent request headers via the `{{APIC-cookie}}` variable.
+
+Request 2: Apply RoCEv2 QoS Config (apply_rocev2_qos())
+
+Objective
+
+Configures class-level2 QoS to support RoCEv2 no-drop traffic using:
+
+- Priority Flow Control (PFC)
+- WRED congestion management
+- Explicit Congestion Notification (ECN)
+
+How It Works
+
+- **Method**: POST
+- **Endpoint**: `{{base_url}}/api/node/mo/uni/infra/qosinst-default/class-level2.xml`
+- **Content-Type**: application/xml
+- **Authentication**: Cookie header with `APIC-cookie={{APIC-cookie}}`
+
+Key Configuration Elements in the XML Payload
+
+```xml
+<qosClass admin="enabled" dn="uni/infra/qosinst-default/class-level2" prio="level2">
+  <qosCong algo="wred" wredMaxThreshold="60" wredMinThreshold="40" wredProbability="0" ecn="enabled" forwardNonEcn="enabled"/>
+  <qosPfcPol name="default" noDropCos="cos3" adminSt="yes" enableScope="fabric"/>
+  <qosSched bw="60"/>
+</qosClass>
+```
+
+Configuration Breakdown
+
+- **qosClass**: Targets class-level2 for RoCEv2 traffic
+  - `admin="enabled"`: Activates the QoS class
+  - `prio="level2"`: Sets priority level
+  
+- **qosCong**: Configures congestion management
+  - `algo="wred"`: Enables Weighted Random Early Detection
+  - `wredMaxThreshold="60"`: Maximum queue depth before aggressive dropping
+  - `wredMinThreshold="40"`: Minimum queue depth before probabilistic dropping
+  - `ecn="enabled"`: Activates Explicit Congestion Notification
+  - `forwardNonEcn="enabled"`: Forwards non-ECN capable traffic
+
+- **qosPfcPol**: Configures Priority Flow Control
+  - `noDropCos="cos3"`: Designates CoS 3 as no-drop traffic class
+  - `adminSt="yes"`: Enables PFC globally
+  - `enableScope="fabric"`: Applies policy fabric-wide
+
+- **qosSched**: Allocates bandwidth
+  - `bw="60"`: Reserves 60% bandwidth for class-level2
+
+API Interaction
+
+The request posts XML directly to the APIC managed object (MO) endpoint, using the session cookie for authentication. The APIC validates the configuration and applies it across the fabric.
+
+Request 3: Reset RoCEv2 QoS Config (destroy_rocev2_qos())
+
+Purpose
+
+Restores class-level2 QoS to default behavior, effectively disabling RoCEv2 optimizations.
+
+How It Works
+
+- **Method**: POST
+- **Endpoint**: `{{base_url}}/api/node/mo/uni/infra/qosinst-default/class-level2.xml`
+- **Content-Type**: application/xml
+- **Authentication**: Cookie header with `APIC-cookie={{APIC-cookie}}`
+
+Reset Configuration XML
+
+```xml
+<qosClass admin="enabled" dn="uni/infra/qosinst-default/class-level2" prio="level2">
+  <qosCong algo="tail-drop" ecn="disabled" forwardNonEcn="disabled"/>
+  <qosPfcPol name="default" noDropCos="" adminSt="no" enableScope="fabric"/>
+  <qosSched bw="20"/>
+</qosClass>
+```
+
+Reset Actions Performed
+
+- **Congestion Management**: Reverts to tail-drop (simple queue management)
+- **ECN**: Disabled (`ecn="disabled"`)
+- **PFC**: Disabled globally (`adminSt="no"`)
+- **No-Drop CoS**: Cleared (`noDropCos=""`)
+- **Bandwidth Allocation**: Reset to default 20%
+
+When It's Used
+
+- Lab cleanup after demonstrations
+- Undoing Terraform or automation deployments
+- Preparing a clean environment for baseline testing
+- Troubleshooting RoCEv2 issues by reverting to defaults
+
+Collection Workflow
+
+Typical Execution Sequence
+
+1. **Update Environment**: Set `base_url` to target APIC controller
+2. **Run Login Request**: Authenticates and captures token automatically
+3. **Run Apply Request**: Configures RoCEv2 QoS policy
+4. **Run Reset Request**: (Optional) Reverts to default configuration
+
+The collection is designed for sequential execution, with each request building on the previous step's output.
+
+Multi-Fabric Deployment
+
+To apply the same configuration across multiple fabrics:
+
+1. Update the `base_url` variable to point to the next APIC
+2. Re-run the three requests in sequence
+3. The login step automatically refreshes the authentication token
+
+This eliminates the need for multiple collection copies or manual token management.
+
+Benefits of This Collection
+
+- **Single-Click Authentication**: Automated token capture eliminates manual copying
+- **Reusable Configuration**: Base URL variable enables multi-fabric deployment
+- **Idempotent Operations**: Apply and reset can be run multiple times safely
+- **Human-Readable XML**: Configuration payloads are easy to audit and modify
+- **Zero Code Required**: Pure REST API calls without scripting dependencies
+- **Version Controlled**: JSON format integrates with Git workflows
+- **Tool Agnostic**: Works in both Postman and Bruno clients
+
+Comparison with Python Script
+
+| Aspect | Bruno Collection | Python Script |
+|--------|-----------------|---------------|
+| **Execution** | Manual (GUI-based) | Automated (CLI-based) |
+| **Multi-Fabric** | Manual base_url update | Automatic loop through APIC_URLS |
+| **Error Handling** | Manual inspection | Try-catch per APIC |
+| **Authentication** | Per-collection run | Per-APIC in loop |
+| **Best For** | Interactive testing, learning | Automation, CI/CD pipelines |
+
+The Bruno collection excels at manual configuration and testing, while the Python script is optimized for automated deployments across multiple fabrics.
+
+Summary
+
+This Bruno/Postman collection provides a lightweight, GUI-based method to configure and reset RoCEv2 QoS policies on Cisco ACI fabrics. It uses standard REST API calls with automated token management, making it ideal for labs, demonstrations, and interactive testing scenarios.
 
 ```json
 {
