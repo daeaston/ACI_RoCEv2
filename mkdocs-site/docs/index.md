@@ -25,7 +25,7 @@
 
 ### Lab Exercises
 
-#### [Lab 1: Terraform Classic)](lab-guides/lab1-terraform-custom/introduction-to-terraform.md)
+#### [Lab 1: Terraform Classic](lab-guides/lab1-terraform-custom/introduction-to-terraform.md)
 1. [Introduction to Terraform](lab-guides/lab1-terraform-custom/introduction-to-terraform.md)
 2. [Install Terraform on Tools Machine](lab-guides/lab1-terraform-custom/install-terraform.md)
 3. [Terraform Concepts: Root vs. Child Modules](lab-guides/lab1-terraform-custom/terraform-concepts.md)
