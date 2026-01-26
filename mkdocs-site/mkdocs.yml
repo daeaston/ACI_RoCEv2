@@ -1,11 +1,11 @@
 site_name: 'RoCEv2 QoS Automation on Cisco ACI Workshop'
 site_description: DEVWKS Workshop - RoCEv2 QoS Configuration and Automation on Cisco ACI
 site_author: David Easton
-site_url: https://github.com/daeaston/DEVWKS-ACI-RoCEv2
+site_url: https://github.com/daeaston/ACI-RoCEv2
 
 # Repository information
-repo_name: DEVWKS-ACI-RoCEv2
-repo_url: https://github.com/daeaston/DEVWKS-ACI-RoCEv2
+repo_name: ACI-RoCEv2
+repo_url: https://github.com/daeaston/ACI-RoCEv2
 edit_uri: edit/main/docs/
 
 # Theme configuration
@@ -62,7 +62,7 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/daeaston/DEVWKS-ACI-RoCEv2
+      link: https://github.com/daeaston/ACI-RoCEv2
       name: RoCEv2 Workshop on GitHub
     - icon: fontawesome/solid/globe
       link: https://developer.cisco.com
