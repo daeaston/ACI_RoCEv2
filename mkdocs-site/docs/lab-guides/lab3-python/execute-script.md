@@ -31,6 +31,9 @@ python rocev2_qos.py destroy
 
 - Observe the APIC GUI reverting to its normal state.
 
+!!! tip "Python Script"
+    Please refer to **Appendix B** to review full Python Script
+
 ## Lab 3 Complete!
 
 Congratulations! You have successfully:
