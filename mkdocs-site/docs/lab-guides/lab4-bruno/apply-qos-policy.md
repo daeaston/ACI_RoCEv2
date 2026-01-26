@@ -29,7 +29,8 @@ In this final step of Lab 4, you'll use Bruno to create the complete RoCEv2 QoS 
 
 ![Bruno](../../assets/images/image036.png)
 
-- Please refer to Appendix C for full detailed explaination of the .json file
+!!! tip "Python Script"
+    Please refer to **Appendix C** to review full .json file along with it explaination.
 
 ## Lab 4 Complete!
 
