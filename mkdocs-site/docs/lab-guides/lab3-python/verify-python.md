@@ -25,7 +25,7 @@ pip install requests
 
 ![Explorer](../../assets/images/image021.png)
 
-- The Python Code can now be viewed including # comments describing the script. Please refer to Appendix B to review the Python Script at greater detail:
+- The Python Code can now be viewed including # comments describing the script. Please refer to **Appendix B** to review the Python Script at greater detail:
 
 ![Explorer](../../assets/images/image022.png)
 
