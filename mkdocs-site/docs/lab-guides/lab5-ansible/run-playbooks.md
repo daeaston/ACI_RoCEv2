@@ -5,7 +5,7 @@
 Navigate back to the ansible directory in the Putty session:
 
 ```bash
-cd ..
+cd /opt/ansible/
 ```
 
 ## Run the Apply QoS Playbook
@@ -74,3 +74,4 @@ Congratulations! You've successfully:
 This lab demonstrated Ansible's procedural approach to automation, complementing the declarative approaches shown in the Terraform labs. Each tool has its strengths and appropriate use cases in a comprehensive automation strategy.
 
 You've completed all labs! Proceed to the [Conclusion](../../Conclusion.md) for a workshop summary and next steps.
+
