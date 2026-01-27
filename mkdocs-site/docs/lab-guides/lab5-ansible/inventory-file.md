@@ -9,7 +9,6 @@ The Ansible inventory file defines which hosts (APIC controllers in our case) th
 - Create the `inventory.ini` file in `/opt/ansible` by executing `vi inventory.ini` and pasting the following content:
 
 ```bash
-cd /opt/ansible/
 vi inventory.ini
 ```
 
@@ -53,5 +52,6 @@ cat inventory.ini
 - **apic_username** and **apic_password** - Credentials for APIC authentication
 
 Proceed to [Group Variables File](../lab5-ansible/group-vars-file.md).
+
 
 
