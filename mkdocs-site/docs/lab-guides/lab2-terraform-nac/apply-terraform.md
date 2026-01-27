@@ -79,11 +79,9 @@ If both tabs were to now be refreshed, the GUI at the top would now show that bo
 
 ![Terraform Managed](../../assets/images/image016.png)
 
-You will notice 2 extra automatically created files under /opt/nac/nac-aci-simple-example/
+You will notice 1 extra automatically created file under /opt/nac/nac-aci-simple-example/
 
 **terraform.tfstate** is Terraform’s primary state file, automatically created on the first successful terraform apply, and it records the current, authoritative mapping between your configuration and real infrastructure.
-
-**terraform.tfstate.backup** is automatically created just before the state file is updated, acting as a safety copy of the previous state so you can recover if an apply or state change goes wrong.
 
 ## Step 5: Execute Terraform Destroy
 
@@ -104,6 +102,10 @@ terraform destroy --auto-approve
 
 The end output of the terraform apply command should state: 
 <span class="tf-success">Destroy complete! Resources: 20 destroyed</span>.
+
+You will now see another extra automatically created file:
+
+**terraform.tfstate.backup** which is automatically created just before the state file is updated, acting as a safety copy of the previous state so you can recover if an apply or state change goes wrong.
 
 ## Lab 2 Complete!
 
