@@ -23,7 +23,7 @@
 
 ![Bruno](../../assets/images/image028.png)
 
-- The Collection is on the left-hand side of the screen. Click it, and a pop-up will appear. Choose Safe Mode:
+- The Collection is on the left-hand side of the screen. Click it:
 
 ![Bruno](../../assets/images/image029.png)
 
