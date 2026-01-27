@@ -47,7 +47,7 @@ Under the same directory, issue a ‘terraform plan’ to shows what changes Ter
 terraform plan
 ```
 
-The end of the output should display **‘Plan: 10 to add, 0 to change, 0 to destroy’** i.e. 5 of the same objects from each APIC
+The end of the output should display **‘Plan: 12 to add, 0 to change, 0 to destroy’** i.e. 5 of the same objects from each APIC
 
 Before the next section, move the ‘tools’ Putty session Window to a different area so that changes to the GUI can be seen when executing the ‘terraform apply’ and ‘terraform destroy’ commands:
 
