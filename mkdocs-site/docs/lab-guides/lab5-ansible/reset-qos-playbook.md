@@ -11,6 +11,15 @@ The `reset_qos.yml` playbook resets QoS configuration back to default settings o
 
 This playbook is useful for cleanup or returning to baseline configuration.
 
+## Navigate to Playbooks Directory
+
+Navigate to the playbooks directory:
+
+```bash
+cd ..
+cd playbooks/
+```
+
 ## Create the Playbook
 
 Create the `reset_qos.yml` playbook by executing `vi reset_qos.yml` and pasting the following content:
@@ -145,3 +154,4 @@ Extracts the authentication cookie for use in API calls.
 | Use Case | RoCEv2 optimization | Return to defaults |
 
 Proceed to [Login to APICs](../lab5-ansible/login-apics.md).
+
