@@ -8,7 +8,7 @@ In this final section, you will create and execute a Python script that deploys 
 
 - Login to each APIC in the same way as has been previously done via the Terraform exercises to validate this script working in the exact same way, with each screen showing the Level 2 QoS configuration:
 
-![apic](../../assets/images/image013.png)
+![apic](../../assets/images/image042.png)
 
 ## Executing the Python Script
 
@@ -32,7 +32,7 @@ python rocev2_qos.py destroy
 - Observe the APIC GUI reverting to its normal state.
 
 !!! tip "Python Script"
-    Please refer to **Appendix B** to review full Python Script and its explaination.
+    As an alternative viewing the Python script from the Woskstation itself, you can instead refer to **Appendix B** to also review full Python Script and its explaination.
 
 ## Lab 3 Complete!
 
