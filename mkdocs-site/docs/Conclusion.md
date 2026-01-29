@@ -43,7 +43,7 @@ Throughout this workshop, you:
 | Method | Pros | Cons |
 |--------|------|------|
 | **Terraform Custom** | Full control, reusable modules | Steep learning curve |
-| **Terraform NAC** | Easy YAML, quick deployment | Less flexible |
+| **Terraform NAC** | Easy YAML | Less flexible, slower |
 | **Python** | Maximum flexibility, scripting | More code, no state management |
 | **Bruno API** | Visual, learning-friendly | Manual process |
 | **Ansible** | Agentless, orchestration-friendly | No native state, slower |
