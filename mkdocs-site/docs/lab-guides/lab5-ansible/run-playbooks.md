@@ -23,7 +23,7 @@ Open both APIC Simulators
 
 ## Navigate to Ansible Directory
 
-Navigate back to the ansible directory in the Putty session:
+- Navigate back to the ansible directory in the Putty session:
 
 ```bash
 cd /opt/ansible/
@@ -31,7 +31,7 @@ cd /opt/ansible/
 
 ## Run the Apply QoS Playbook
 
-Run the playbook to apply the QoS configuration:
+- Run the playbook to apply the QoS configuration:
 
 ```bash
 ansible-playbook -i inventory.ini playbooks/rocev2_qos.yml
@@ -39,7 +39,7 @@ ansible-playbook -i inventory.ini playbooks/rocev2_qos.yml
 
 ### Expected Output
 
-You should see output showing tasks as `ok` for both APICs:
+- You should see output showing tasks as `ok` for both APICs:
 
 <pre>
 PLAY RECAP *******************************************************************************
@@ -47,7 +47,7 @@ PLAY RECAP *********************************************************************
 <span class="tf-success">apic1-b.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 </pre>
 
-Also observe changes in the APIC GUI:
+- Also observe changes in the APIC GUI:
 
 ![Split View](../../assets/images/image043.png)
 
@@ -57,7 +57,7 @@ Also observe changes in the APIC GUI:
 
 ## Run the Reset QoS Playbook
 
-Run the playbook to reset the QoS configuration back to defaults:
+- Run the playbook to reset the QoS configuration back to defaults:
 
 ```bash
 ansible-playbook -i inventory.ini playbooks/reset_qos.yml
@@ -65,7 +65,7 @@ ansible-playbook -i inventory.ini playbooks/reset_qos.yml
 
 ### Expected Output
 
-You should see output showing tasks as `ok` for both APICs:
+- You should see output showing tasks as `ok` for both APICs:
 
 <pre>
 PLAY RECAP *******************************************************************************
@@ -73,7 +73,7 @@ PLAY RECAP *********************************************************************
 <span class="tf-success">apic1-b.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 </pre>
 
-Also observe changes in the APIC GUI:
+- Also observe changes in the APIC GUI:
 
 ![Split View](../../assets/images/image042.png)
 
@@ -103,6 +103,7 @@ Congratulations! You've successfully:
 This lab demonstrated Ansible's procedural approach to automation, complementing the declarative approaches shown in the Terraform labs. Each tool has its strengths and appropriate use cases in a comprehensive automation strategy.
 
 You've completed all labs! Proceed to the [Conclusion](../../Conclusion.md) for a workshop summary and next steps.
+
 
 
 
