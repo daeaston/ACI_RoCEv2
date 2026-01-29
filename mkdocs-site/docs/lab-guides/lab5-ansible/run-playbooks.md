@@ -41,13 +41,7 @@ ansible-playbook -i inventory.ini playbooks/rocev2_qos.yml
 
 - You should see output showing tasks as `ok` for both APICs:
 
-<pre>
-PLAY RECAP *******************************************************************************
-<span class="tf-success">apic1-a.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-<span class="tf-success">apic1-b.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-</pre>
-
-<pre style="font-size: 60%;">
+<pre style="font-size: 66%;">
 PLAY RECAP *******************************************************************************
 <span class="tf-success">apic1-a.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 <span class="tf-success">apic1-b.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
@@ -73,7 +67,7 @@ ansible-playbook -i inventory.ini playbooks/reset_qos.yml
 
 - You should see output showing tasks as `ok` for both APICs:
 
-<pre>
+<pre style="font-size: 66%;">
 PLAY RECAP *******************************************************************************
 <span class="tf-success">apic1-a.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 <span class="tf-success">apic1-b.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
@@ -109,6 +103,7 @@ Congratulations! You've successfully:
 This lab demonstrated Ansible's procedural approach to automation, complementing the declarative approaches shown in the Terraform labs. Each tool has its strengths and appropriate use cases in a comprehensive automation strategy.
 
 You've completed all labs! Proceed to the [Conclusion](../../Conclusion.md) for a workshop summary and next steps.
+
 
 
 
