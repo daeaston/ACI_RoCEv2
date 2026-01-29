@@ -17,6 +17,7 @@ Open both APIC Simulators
 
 - (Optional) – Right Click on one of the Browser Tabs and select ‘Add tab to new split view’ to get the view of both APIC’s:
 
+![Split View](../../assets/images/image048.png)
 
 ![Split View](../../assets/images/image042.png)
 
@@ -103,6 +104,7 @@ Congratulations! You've successfully:
 This lab demonstrated Ansible's procedural approach to automation, complementing the declarative approaches shown in the Terraform labs. Each tool has its strengths and appropriate use cases in a comprehensive automation strategy.
 
 You've completed all labs! Proceed to the [Conclusion](../../Conclusion.md) for a workshop summary and next steps.
+
 
 
 
