@@ -26,6 +26,8 @@ In this final step of Lab 1, you will apply your Terraform configuration to depl
 
 - (Optional) – Right Click on one of the Browser Tabs and select ‘Add tab to new split view’ to get the view of both APIC’s:
 
+![Split View](../../assets/images/image048.png)
+
 ![Split View](../../assets/images/image013.png)
 
 ## Step 2: Execute Terraform Init
