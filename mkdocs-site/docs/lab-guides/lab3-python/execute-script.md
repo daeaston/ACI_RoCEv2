@@ -6,9 +6,23 @@ In this final section, you will create and execute a Python script that deploys 
 
 # Login to Both APICs
 
-- Login to each APIC in the same way as has been previously done via the Terraform exercises to validate this script working in the exact same way, with each screen showing the Level 2 QoS configuration:
+Open both APIC Simulators
 
-![apic](../../assets/images/image042.png)
+- Open Chrome Browser on the Desktop of the Windows Machine
+- Click on shortcuts to each APIC: ‘APIC-SF’ and ‘APIC-NY’ with separate Tabs for each
+- Login to each APIC via admin/C1sco12345
+
+![Apic Simulators](../../assets/images/image009.png)
+
+- From each APIC, navigate to **Fabric -> Access Policies -> Policies -> Global -> QOS Class -> Level2**, where the default **‘Best Effort’** QoS settings will then be displayed on the right:
+
+![Access Policies](../../assets/images/image044.png)
+
+- (Optional) – Right Click on one of the Browser Tabs and select ‘Add tab to new split view’ to get the view of both APIC’s:
+
+![Split View](../../assets/images/image048.png)
+
+![Split View](../../assets/images/image042.png)
 
 ## Executing the Python Script
 
