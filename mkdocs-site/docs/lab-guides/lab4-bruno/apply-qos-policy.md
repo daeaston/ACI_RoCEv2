@@ -45,7 +45,7 @@ Open both APIC Simulators
 
 ![Bruno](../../assets/images/image036.png)
 
-!!! tip "Python Script"
+!!! tip "Optional"
     Please refer to **Appendix C** to review full .json file along with its explaination.
 
 ## Lab 4 Complete!
