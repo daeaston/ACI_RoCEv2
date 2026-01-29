@@ -14,17 +14,9 @@ Open both APIC Simulators
 
 ![Apic Simulators](../../assets/images/image009.png)
 
-
 - From each APIC, navigate to **Fabric -> Access Policies -> Policies -> Global -> QOS Class -> Level2**, where the default **‘Best Effort’** QoS settings will then be displayed on the right:
 
-
 ![Access Policies](../../assets/images/image044.png)
-
-
-- (Optional) – Right Click on one of the Browser Tabs and select ‘Add tab to new split view’ to get the view of both APIC’s:
-
-
-![Split View](../../assets/images/image042.png)
 
 - Select the 1st POST Command
 - Click on the Arrow on the right-hand side of the window to apply the POST Command. You should receive a 200 OK, indicating successful login:
@@ -33,7 +25,11 @@ Open both APIC Simulators
 
 - Select the 2nd POST Command: Apply the QoS Config. Have the APIC GUI in the background to verify that QoS has been applied successfully.
 
+![Bruno](../../assets/images/image046.png)
+
 - Select the 3rd POST Command: Reset the QoS Config back to its original Best Effort State.
+
+  ![Bruno](../../assets/images/image046.png)
 
 - Optional: Modify the base_url environment to point to the second APIC (e.g., https://apic1-b.corp.pseudoco.com). Click Save then Activate.
 
