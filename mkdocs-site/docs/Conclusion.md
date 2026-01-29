@@ -26,61 +26,17 @@ Throughout this workshop, you:
 | **Lab 4** | Bruno API Client | Visual REST API exploration |
 | **Lab 5** | Ansible Playbooks | Procedural orchestration across multiple hosts |
 
+## Decision Matrix
+
+| Approach | When to Use | Best For |
+|----------|-------------|----------|
+| **Terraform (Custom Modules)** | • Need full control over configuration<br>• Building reusable, shareable modules<br>• Managing complex infrastructure state<br>• Team has Terraform expertise | Enterprise infrastructure, GitOps workflows, multi-cloud |
+| **Terraform (NAC)** | • Want quick deployment with less code<br>• Team prefers YAML over HCL<br>• Following standard network patterns<br>• Need to get started quickly | Network teams new to automation, standard deployments |
+| **Python** | • Need complex conditional logic<br>• Integrating with other systems/databases<br>• Dynamic configuration based on runtime data<br>• Custom workflows and orchestration | Integration, advanced automation, custom tooling |
+| **Bruno / API Client** | • Learning the ACI API<br>• Testing API calls before coding<br>• Documenting API workflows<br>• One-off configuration tasks | Development, testing, learning, documentation |
+| **Ansible** | • Multi-step operational workflows<br>• Orchestrating across many devices<br>• Day-2 operations and remediation<br>• When execution order and error handling matter | Configuration management, orchestration, operational automation |
+
 ## Choosing the Right Tool
-
-### Decision Matrix
-
-Use this guide to select the best approach for your needs:
-
-#### Terraform (Custom Modules)
-
-**When to use:**
-- Need full control over configuration
-- Building reusable, shareable modules
-- Managing complex infrastructure state
-- Team has Terraform expertise
-
-**Best for:** Enterprise infrastructure, GitOps workflows, multi-cloud
-
-#### Terraform (NAC)
-
-**When to use:**
-- Want quick deployment with less code
-- Team prefers YAML over HCL
-- Following standard network patterns
-- Need to get started quickly
-
-**Best for:** Network teams new to automation, standard deployments
-
-#### Python
-
-**When to use:**
-- Need complex conditional logic
-- Integrating with other systems/databases
-- Dynamic configuration based on runtime data
-- Custom workflows and orchestration
-
-**Best for:** Integration, advanced automation, custom tooling
-
-#### Bruno / API Client
-
-**When to use:**
-- Learning the ACI API
-- Testing API calls before coding
-- Documenting API workflows
-- One-off configuration tasks
-
-**Best for:** Development, testing, learning, documentation
-
-#### Ansible
-
-**When to use:**
-- Multi-step operational workflows
-- Orchestrating across many devices
-- Day-2 operations and remediation
-- When execution order and error handling matter
-
-**Best for:** Configuration management, orchestration, operational automation
 
 ## Real-World Applications
 
