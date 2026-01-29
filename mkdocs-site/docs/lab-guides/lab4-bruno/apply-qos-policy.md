@@ -29,7 +29,7 @@ Open both APIC Simulators
 
 - Select the 3rd POST Command: Reset the QoS Config back to its original Best Effort State.
 
-  ![Bruno](../../assets/images/image046.png)
+![Bruno](../../assets/images/image047.png)
 
 - Optional: Modify the base_url environment to point to the second APIC (e.g., https://apic1-b.corp.pseudoco.com). Click Save then Activate.
 
