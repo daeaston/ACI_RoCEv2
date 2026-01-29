@@ -6,6 +6,26 @@ In this final step of Lab 4, you'll use Bruno to create the complete RoCEv2 QoS 
 
 ## Steps
 
+Open both APIC Simulators
+
+- Open Chrome Browser on the Desktop of the Windows Machine
+- Click on shortcuts to each APIC: ‘APIC-SF’ and ‘APIC-NY’ with separate Tabs for each
+- Login to each APIC via admin/C1sco12345
+
+![Apic Simulators](../../assets/images/image009.png)
+
+
+- From each APIC, navigate to **Fabric -> Access Policies -> Policies -> Global -> QOS Class -> Level2**, where the default **‘Best Effort’** QoS settings will then be displayed on the right:
+
+
+![Access Policies](../../assets/images/image044.png)
+
+
+- (Optional) – Right Click on one of the Browser Tabs and select ‘Add tab to new split view’ to get the view of both APIC’s:
+
+
+![Split View](../../assets/images/image042.png)
+
 - Select the 1st POST Command
 - Click on the Arrow on the right-hand side of the window to apply the POST Command. You should receive a 200 OK, indicating successful login:
 
