@@ -22,14 +22,19 @@ python rocev2_qos.py apply
 
 ![python apply](../../assets/images/image023.png)
 
-- Observe the changes in the APIC GUI.
+- Observe the changes in the APIC GUI:
+
+![apic](../../assets/images/image043.png)
+
 - Run the Python script to reset the configuration: **python rocev2_qos.py destroy**
 
 ```bash
 python rocev2_qos.py destroy
 ```
 
-- Observe the APIC GUI reverting to its normal state.
+- Observe the APIC GUI reverting to its normal state:
+
+![apic](../../assets/images/image042.png)
 
 !!! tip "Python Script"
     As an alternative viewing the Python script from the Woskstation itself, you can instead refer to **Appendix B** to also review full Python Script and its explaination.
