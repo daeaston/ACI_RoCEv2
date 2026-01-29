@@ -52,7 +52,7 @@ Observe that NAC is slower because it adds an abstraction layer that translates 
 
 Before the next section, move the ‘tools’ Putty session Window to a different area so that changes to the GUI can be seen when executing the ‘terraform apply’ and ‘terraform destroy’ commands:
 
-![Terraform Plan](../../assets/images/image014.png)
+![Terraform Plan](../../assets/images/image049.png)
 
 ## Step 4: Execute Terraform Apply
 
