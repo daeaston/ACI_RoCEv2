@@ -14,7 +14,7 @@ Open both APIC Simulators
 
 ![Apic Simulators](../../assets/images/image009.png)
 
-- From each APIC, navigate to **Fabric -> Access Policies -> Policies -> Global -> QOS Class -> Level2**, where the default **‘Best Effort’** QoS settings will then be displayed on the right:
+- From just Apic1-a, navigate to **Fabric -> Access Policies -> Policies -> Global -> QOS Class -> Level2**, where the default **‘Best Effort’** QoS settings will then be displayed on the right:
 
 ![Access Policies](../../assets/images/image044.png)
 
