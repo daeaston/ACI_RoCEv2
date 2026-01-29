@@ -26,7 +26,9 @@ Throughout this workshop, you:
 | **Lab 4** | Bruno API Client | Visual REST API exploration |
 | **Lab 5** | Ansible Playbooks | Procedural orchestration across multiple hosts |
 
-## Decision Matrix
+## Choosing the Right Tool
+
+### Decision Matrix
 
 | Approach | When to Use | Best For |
 |----------|-------------|----------|
@@ -36,14 +38,21 @@ Throughout this workshop, you:
 | **Bruno / API Client** | • Learning the ACI API<br>• Testing API calls before coding<br>• Documenting API workflows<br>• One-off configuration tasks | Development, testing, learning, documentation |
 | **Ansible** | • Multi-step operational workflows<br>• Orchestrating across many devices<br>• Day-2 operations and remediation<br>• When execution order and error handling matter | Configuration management, orchestration, operational automation |
 
-## Choosing the Right Tool
+### Pros and Cons
+
+| Method | Pros | Cons |
+|--------|------|------|
+| **Terraform Custom** | Full control, reusable modules | Steep learning curve |
+| **Terraform NAC** | Easy YAML, quick deployment | Less flexible |
+| **Python** | Maximum flexibility, scripting | More code, no state management |
+| **Bruno API** | Visual, learning-friendly | Manual process |
+| **Ansible** | Agentless, orchestration-friendly | No native state, slower |
 
 ## Real-World Applications
 
 ### Production Deployment Pipeline
 
 A typical production automation workflow might combine multiple approaches:
-
 ```mermaid
 graph LR
     A[Bruno/Postman] -->|API Testing| B[Python Scripts]
@@ -59,19 +68,7 @@ graph LR
 4. **Python** - Post-deployment validation
 5. **Monitoring** - Continuous verification
 
-### Integration Examples
-
-## Comparison of All Labs
-
-| Method | Lab | Pros | Cons | Best For |
-|--------|-----|------|------|----------|
-| **Terraform Custom** | 1 | Full control, reusable modules | Steep learning curve | Complex infrastructure |
-| **Terraform NAC** | 2 | Easy YAML, quick deployment | Less flexible | Standard patterns |
-| **Python** | 3 | Maximum flexibility, scripting | More code, no state mgmt | Integration, complex logic |
-| **Bruno API** | 4 | Visual, learning-friendly | Manual process | Testing, documentation |
-| **Ansible** | 5 | Agentless, orchestration-friendly | No native state, slower | Multi-APIC workflows |
-
-## Best Practices Summary
+## Best Practices
 
 ### General Automation
 
@@ -128,9 +125,7 @@ graph LR
 3. **Network Testing** - Implement automated validation
 4. **Monitoring Integration** - Connect automation to monitoring systems
 
-### Real Environment
-
-Apply what you've learned:
+### Apply Your Learning
 
 1. **Lab Environment** - Practice in your own lab
 2. **Dev/Test Fabric** - Try on non-production ACI
@@ -157,7 +152,7 @@ Automation isn't just about saving time—it's about:
 
 ### RoCEv2 for AI/ML
 
-As AI and ML workloads grow, RoCEv2 becomes critical:
+As AI and ML workloads grow, RoCEv2 becomes critical for:
 
 - **Lossless Operation** - PFC prevents packet drops
 - **Low Latency** - Direct memory access
@@ -174,14 +169,6 @@ By automating RoCEv2 QoS, you ensure:
 ## Thank You!
 
 Thank you for participating in this workshop. We hope you found it valuable and that you'll apply these automation techniques in your own environments.
-
-### Feedback
-
-We welcome your feedback:
-
-- What worked well?
-- What could be improved?
-- What additional topics would you like to see?
 
 ### Stay Connected
 
@@ -214,4 +201,4 @@ We welcome your feedback:
 
 Happy Automating! 🚀
 
-**Optional** Proceed to the [Appendicies.](appendicies.md)
+**Optional:** Proceed to the [Appendicies](appendicies.md)
