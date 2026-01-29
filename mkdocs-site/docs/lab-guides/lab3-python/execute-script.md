@@ -20,7 +20,7 @@ In this final section, you will create and execute a Python script that deploys 
 python rocev2_qos.py apply
 ```
 
-![python apply](../../assets/images/image023.png)
+![python apply](../../assets/images/image050.png)
 
 - Observe the changes in the APIC GUI:
 
