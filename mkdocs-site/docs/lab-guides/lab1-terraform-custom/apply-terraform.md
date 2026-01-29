@@ -103,7 +103,7 @@ Alternatively, **‘terraform destroy –auto-approve’** can be used to skip t
 terraform destroy --auto-approve
 ```
 
-![Terraform Destroy](../../assets/images/image017.png)
+![Terraform Destroy](../../assets/images/image045.png)
 
 
 The end output of the terraform apply command should state: 
