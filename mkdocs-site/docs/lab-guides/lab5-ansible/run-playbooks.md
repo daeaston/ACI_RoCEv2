@@ -1,5 +1,26 @@
 # Running Ansible Playbooks
 
+Open both APIC Simulators
+
+- Open Chrome Browser on the Desktop of the Windows Machine
+- Click on shortcuts to each APIC: ‘APIC-SF’ and ‘APIC-NY’ with separate Tabs for each
+- Login to each APIC via admin/C1sco12345
+
+![Apic Simulators](../../assets/images/image009.png)
+
+
+- From each APIC, navigate to **Fabric -> Access Policies -> Policies -> Global -> QOS Class -> Level2**, where the default **‘Best Effort’** QoS settings will then be displayed on the right:
+
+
+![Access Policies](../../assets/images/image044.png)
+
+
+- (Optional) – Right Click on one of the Browser Tabs and select ‘Add tab to new split view’ to get the view of both APIC’s:
+
+
+![Split View](../../assets/images/image042.png)
+
+
 ## Navigate to Ansible Directory
 
 Navigate back to the ansible directory in the Putty session:
@@ -26,6 +47,8 @@ PLAY RECAP *********************************************************************
 <span class="tf-success">apic1-b.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 </pre>
 
+![Split View](../../assets/images/image043.png)
+
 
 !!! success "Playbook Completed"
     All tasks completed successfully on both APIC controllers. The QoS configuration for RoCEv2 has been applied.
@@ -47,6 +70,8 @@ PLAY RECAP *********************************************************************
 <span class="tf-success">apic1-a.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 <span class="tf-success">apic1-b.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 </pre>
+
+![Split View](../../assets/images/image042.png)
 
 !!! success "Playbook Completed"
     All tasks completed successfully on both APIC controllers. The QoS configuration has been reset to default values.
@@ -74,4 +99,5 @@ Congratulations! You've successfully:
 This lab demonstrated Ansible's procedural approach to automation, complementing the declarative approaches shown in the Terraform labs. Each tool has its strengths and appropriate use cases in a comprehensive automation strategy.
 
 You've completed all labs! Proceed to the [Conclusion](../../Conclusion.md) for a workshop summary and next steps.
+
 
