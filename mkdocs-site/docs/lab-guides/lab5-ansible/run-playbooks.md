@@ -47,14 +47,6 @@ PLAY RECAP *********************************************************************
 <span class="tf-success">apic1-b.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 </pre>
 
-<div style="max-width: 60%; overflow-x: auto;">
-<pre>
-PLAY RECAP *******************************************************************************
-<span class="tf-success">apic1-a.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-<span class="tf-success">apic1-b.corp.pseudoco.com</span>  : <span class="tf-success">ok=3</span>    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-</pre>
-</div>
-
 - Also observe changes in the APIC GUI:
 
 ![Split View](../../assets/images/image043.png)
@@ -111,6 +103,7 @@ Congratulations! You've successfully:
 This lab demonstrated Ansible's procedural approach to automation, complementing the declarative approaches shown in the Terraform labs. Each tool has its strengths and appropriate use cases in a comprehensive automation strategy.
 
 You've completed all labs! Proceed to the [Conclusion](../../Conclusion.md) for a workshop summary and next steps.
+
 
 
 
