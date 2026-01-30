@@ -157,3 +157,10 @@
   color: #43a047;   /* mid green: between Material dark and terminal bright */
   font-weight: 700;
 }
+
+/* ---- TIGHTEN BULLET LIST INDENTATION (LAB INSTRUCTIONS) ---- */
+
+.md-typeset ul {
+  margin-left: 0;
+  padding-left: 1em;
+}
