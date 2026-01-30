@@ -24,15 +24,15 @@ The lab environment consists of a dual-fabric ACI deployment with the following 
 
 ### Network Components
 
-- **APIC1-A Cluster** - ACI Controller for Fabric A
+**APIC1-A Cluster** - ACI Controller for Fabric A
   - URL: `https://apic1-a.corp.pseudoco.com` (198.18.133.200)
   - Credentials: `admin` / `C1sco12345`
 
-- **APIC1-B Cluster** - ACI Controller for Fabric B  
+**APIC1-B Cluster** - ACI Controller for Fabric B  
   - URL: `https://apic1-b.corp.pseudoco.com` (198.18.132.200)
   - Credentials: `admin` / `C1sco12345`
 
-- **Tools VM** - CentOS 7 Linux machine with automation tools
+**Tools VM** - CentOS 7 Linux machine with automation tools
   - Login: `root` / `C1sco12345`
   - Working directories:
     - `/opt/tf` - Terraform custom modules
