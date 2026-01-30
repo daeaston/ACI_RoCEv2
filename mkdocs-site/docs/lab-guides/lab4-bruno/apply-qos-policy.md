@@ -35,9 +35,9 @@ Open both APIC Simulators
 
 ![Bruno](../../assets/images/image034.png)
 
-- Repeat the above steps with the POST Commands and verify successful application to the second APIC via the GUI.
+Repeat the above steps with the POST Commands and verify successful application to the second APIC via the GUI.
 
-- Optional: Open the RoCEv2 ACI - Full Postman Collection.postman_collection file in Visual Studio Code to view its structure:
+Optional: Open the RoCEv2 ACI - Full Postman Collection.postman_collection file in Visual Studio Code to view its structure:
 
 ![Bruno](../../assets/images/image035.png)
 
