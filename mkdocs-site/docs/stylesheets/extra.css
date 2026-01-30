@@ -157,3 +157,22 @@
   color: #43a047;   /* mid green: between Material dark and terminal bright */
   font-weight: 700;
 }
+
+/* ---- Bullet list indentation (override Material) ---- */
+.md-content .md-typeset ul,
+.md-content .md-typeset ol {
+  margin-left: 0 !important;
+  padding-left: 0 !important;              /* main indent */
+  padding-inline-start: 0 !important;      /* some themes use this */
+}
+
+/* Pull the text closer to the bullet */
+.md-content .md-typeset li {
+  margin-left: 0 !important;
+}
+
+/* Option A: bullets inside (usually looks most "left") */
+.md-content .md-typeset ul {
+  list-style-position: inside !important;
+}
+
