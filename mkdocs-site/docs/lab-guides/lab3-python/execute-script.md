@@ -29,9 +29,9 @@ Open both APIC Simulators
 
 ## Executing the Python Script
 
-- Open Command Prompt again from the Taskbar, change the directory to the Python Folder
+Open Command Prompt again from the Taskbar, change the directory to the Python Folder
 
-- Run the Python script to apply the configuration: **python rocev2_qos.py apply**
+Run the Python script to apply the configuration: **python rocev2_qos.py apply**
 
 ```bash
 python rocev2_qos.py apply
