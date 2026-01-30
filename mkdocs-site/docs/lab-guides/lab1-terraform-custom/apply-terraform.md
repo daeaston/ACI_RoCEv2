@@ -30,9 +30,6 @@ In this final step of Lab 1, you will apply your Terraform configuration to depl
 
 ![Split View](../../assets/images/image013.png)
 
-!!! note "Multiple Browser Tabs"
-    Keep both APIC GUI tabs open. After running the Ansible playbook, you can refresh these pages to immediately see the configuration changes applied across both fabrics simultaneously.
-
 ## Step 2: Execute Terraform Init
 
 Make sure you are in the /opt/tf/terraform directory, then issue the ‘terraform init’ command to initialize and set up the working directory by downloading the required providers, modules, and plugins so the configuration is ready to run.
