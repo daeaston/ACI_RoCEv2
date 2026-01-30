@@ -113,4 +113,4 @@ You're now ready to start the labs! Choose your path:
 - **[Lab 5: Ansible Playbooks](../lab-guides/lab5-ansible/ansible-overview.md)** - Build Ansible modules from scratch
 
 !!! tip "Flexible Learning Path"
-    While the labs are designed to be completed in sequence, each lab is self-contained. Feel free to jump to the sections that interest you most!
+    While the labs are designed to be completed in sequence, each lab is self-contained. Feel free to jump to the sections that interest you the most!
