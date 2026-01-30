@@ -1,8 +1,22 @@
 # Login to APIC GUIs
 
-Login to each APIC in the same fashion as the previous exercises with each screen showing the Level 2 QoS configuration:
+Open both APIC Simulators
 
-![Ansible](../../assets/images/image013.png)
+- Open Chrome Browser on the Desktop of the Windows Machine
+- Click on shortcuts to each APIC: ‘APIC-SF’ and ‘APIC-NY’ with separate Tabs for each
+- Login to each APIC via admin/C1sco12345
+
+![Apic Simulators](../../assets/images/image009.png)
+
+- From each APIC, navigate to **Fabric -> Access Policies -> Policies -> Global -> QOS Class -> Level2**, where the default **‘Best Effort’** QoS settings will then be displayed on the right:
+
+![Access Policies](../../assets/images/image044.png)
+
+- (Optional) – Right Click on one of the Browser Tabs and select ‘Add tab to new split view’ to get the view of both APIC’s:
+
+![Split View](../../assets/images/image048.png)
+
+![Split View](../../assets/images/image042.png)
 
 ## Current Configuration (Before Ansible)
 
@@ -24,3 +38,4 @@ You should see the default **Best Effort** configuration:
 With both APIC GUIs open showing the QoS configuration, you're ready to execute the Ansible playbooks and observe the automated changes in real-time.
 
 Proceed to [Run Playbooks](../lab5-ansible/run-playbooks.md).
+
