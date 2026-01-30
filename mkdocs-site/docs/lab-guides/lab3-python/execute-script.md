@@ -24,6 +24,9 @@ Open both APIC Simulators
 
 ![Split View](../../assets/images/image042.png)
 
+!!! note "Multiple Browser Tabs"
+    Keep both APIC GUI tabs open. After running the Ansible playbook, you can refresh these pages to immediately see the configuration changes applied across both fabrics simultaneously.
+
 ## Executing the Python Script
 
 - Open Command Prompt again from the Taskbar, change the directory to the Python Folder
