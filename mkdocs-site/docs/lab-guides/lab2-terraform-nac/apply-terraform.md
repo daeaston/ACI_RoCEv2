@@ -27,9 +27,6 @@ In this final step of Lab 2, you will deploy the NAC YAML configuration to both 
 
 ![Split View](../../assets/images/image042.png)
 
-!!! note "Multiple Browser Tabs"
-    Keep both APIC GUI tabs open. After running the Ansible playbook, you can refresh these pages to immediately see the configuration changes applied across both fabrics simultaneously.
-
 ## Step 2: Execute Terraform Init
 
 Navigate back to /opt/nac/nac-aci-simple-example, then issue the ‘terraform init’ command to initialize and set up the working directory by downloading the required providers, modules, and plugins so the configuration is ready to run.
