@@ -49,7 +49,7 @@ Run the Python script to reset the configuration: **python rocev2_qos.py destroy
 python rocev2_qos.py destroy
 ```
 
-- Observe the APIC GUI reverting to its normal state:
+Observe the APIC GUI reverting to its normal state:
 
 ![apic](../../assets/images/image042.png)
 
