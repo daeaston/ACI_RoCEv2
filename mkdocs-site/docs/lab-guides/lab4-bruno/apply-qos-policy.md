@@ -33,6 +33,10 @@ Open both APIC Simulators
 
 - Optional: Modify the base_url environment to point to the second APIC (e.g., https://apic1-b.corp.pseudoco.com). Click Save then Activate.
 
+- Repeat the above steps with the POST Commands and verify successful application to the second APIC via the GUI.
+
+- Optional: Open the RoCEv2 ACI - Full Postman Collection.postman_collection file in Visual Studio Code to view its structure:
+
 ![Bruno](../../assets/images/image034.png)
 
 ![Bruno](../../assets/images/image035.png)
