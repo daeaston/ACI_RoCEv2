@@ -11,7 +11,7 @@ The `rocev2_qos.yml` playbook applies RoCEv2 QoS configuration to the APIC contr
 
 ## Navigate to Playbooks Directory
 
-Navigate to the playbooks directory:
+- Navigate to the playbooks directory:
 
 ```bash
 cd ..
@@ -20,7 +20,7 @@ cd playbooks/
 
 ## Create the Playbook
 
-Create the `rocev2_qos.yml` playbook by executing `vi rocev2_qos.yml` and pasting the following content:
+- Create the `rocev2_qos.yml` playbook by executing `vi rocev2_qos.yml` and pasting the following content:
 
 ```bash
 vi rocev2_qos.yml
@@ -80,11 +80,11 @@ vi rocev2_qos.yml
 
 ## Save the File
 
-Save the file by pressing **Esc**, then typing **:wq!**
+- Save the file by pressing **Esc**, then typing **:wq!**
 
 ## Verify the File
 
-Once outside the vi editor, the file can be verified by typing:
+- Once outside the vi editor, the file can be verified by typing:
 
 ```bash
 cat rocev2_qos.yml
@@ -148,3 +148,4 @@ cat rocev2_qos.yml
 | **Bandwidth** | 60% | Guaranteed bandwidth for Level 2 traffic |
 
 Proceed to [Reset QoS Playbook](../lab5-ansible/reset-qos-playbook.md).
+
