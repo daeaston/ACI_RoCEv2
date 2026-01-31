@@ -51,9 +51,11 @@ terraform plan
 
 The end of the output should display **‘Plan: 20 to add, 0 to change, 0 to destroy’** i.e. 10 of the same objects from each APIC
 
-Observe that NAC is slower because it adds an abstraction layer that translates YAML intent into multiple Terraform resources, increasing processing and API calls. Classic Terraform talks directly to the provider with fewer layers, so plans and applies run faster.
+!!! warning "NAC slower"
+    Observe that NAC is slower because it adds an abstraction layer that translates YAML intent into multiple Terraform resources, increasing processing and API calls. Classic Terraform talks directly to the provider with fewer layers, so plans and applies run faster.
 
-Before the next section, move the ‘tools’ Putty session Window to a different area so that changes to the GUI can be seen when executing the ‘terraform apply’ and ‘terraform destroy’ commands:
+!!! tip "View GUI changes in real time"
+    Before the next section, move the ‘tools’ Putty session Window to a different area so that changes to the GUI can be seen when executing the ‘terraform apply’ and ‘terraform destroy’ commands:
 
 ![Terraform Plan](../../assets/images/image049.png)
 
