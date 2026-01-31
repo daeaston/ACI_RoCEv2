@@ -1,4 +1,4 @@
-# Python Overview
+# Lab 3: Python
 
 ![Python](../../assets/images/image039.png)
 
