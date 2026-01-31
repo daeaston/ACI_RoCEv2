@@ -6,14 +6,14 @@ This script provides a simple, direct way to reset the QoS configuration on an A
 
 ## Create Reset Script
 
-Navigate back to the nac-aci-simple-example directory, create, then go into into the scripts directory:
+- Navigate back to the nac-aci-simple-example directory, create, then go into into the scripts directory:
 
 ```bash
 cd ..
 mkdir scripts
 cd scripts
 ```
-Create the reset_qos.sh script:
+- Create the reset_qos.sh script:
 
 ```bash
 vi reset_qos.sh
@@ -55,11 +55,11 @@ echo "Reset complete."
 
 ## Save the File
 
-Save the file by pressing **Esc**, then typing **:wq!**
+- Save the file by pressing **Esc**, then typing **:wq!**
 
 ## Verify the File
 
-Once outside the vi editor, the file can be verified by typing:
+- Once outside the vi editor, the file can be verified by typing:
 
 ```bash
 cat reset_qos.sh
