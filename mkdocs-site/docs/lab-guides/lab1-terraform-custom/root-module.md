@@ -6,7 +6,7 @@ In this section, you will build the root Terraform module that orchestrates the 
 
 ## Working Directory
 
-Ensure you're in the correct directory:
+- Ensure you're in the correct directory:
 
 ```bash
 cd /opt/
@@ -16,7 +16,7 @@ mkdir terraform
 cd terraform
 ```
 
-Create the root main.tf file by executing the command ‘vi main.tf’ and pasting the following content:
+- Create the root main.tf file by executing the command ‘vi main.tf’ and pasting the following content:
 
 ```bash
 vi main.tf
@@ -94,7 +94,7 @@ cat main.tf
 
 ## Step 2: Create `variables.tf`
 
-Create the root variables.tf file by executing the command ‘vi variables.tf’ and pasting the following content:
+- Create the root variables.tf file by executing the command ‘vi variables.tf’ and pasting the following content:
 
 ```bash
 vi variables.tf
@@ -103,7 +103,7 @@ vi variables.tf
 !!! tip "Vi Editor Tips"
     Press **i** to insert text, then copy and paste all the content below.
 
-Define the input variables:
+- Define the input variables:
 
 ```hcl
 # Defining the Username and Password Variables:
