@@ -4,22 +4,22 @@ Before beginning this workshop, participants should have:
 
 ## Knowledge Prerequisites
 
-- **Basic Networking Concepts**
-  - Understanding of Layer 2/Layer 3 networking
-  - Familiarity with Ethernet and IP protocols
-  - Knowledge of QoS concepts
+**Basic Networking Concepts**
+- Understanding of Layer 2/Layer 3 networking
+- Familiarity with Ethernet and IP protocols
+- Knowledge of QoS concepts
     
 
-- **Cisco ACI Familiarity**
-  - Basic understanding of ACI architecture
-  - Familiarity with APIC GUI navigation
-  - Understanding of ACI policy model (Tenants, Application Profiles, EPGs)
+**Cisco ACI Familiarity**
+- Basic understanding of ACI architecture
+- Familiarity with APIC GUI navigation
+- Understanding of ACI policy model (Tenants, Application Profiles, EPGs)
     
 
-- **Automation Experience**
-  - Basic command-line proficiency (Linux/Unix)
-  - Understanding of Infrastructure as Code (IaC) concepts
-  - Familiarity with at least one of: Terraform, Python, or REST APIs
+**Automation Experience**
+- Basic command-line proficiency (Linux/Unix)
+- Understanding of Infrastructure as Code (IaC) concepts
+- Familiarity with at least one of: Terraform, Python, or REST APIs
 
 ## Software Requirements
 
