@@ -161,14 +161,17 @@
 /* ---- Bullet list indentation (override Material) ---- */
 .md-content .md-typeset ul,
 .md-content .md-typeset ol {
-  margin-left: 1.5em !important;
-  padding-left: 0 !important;
+  margin-left: 0 !important;
+  padding-left: 1em !important;              /* minimal indent for text */
+  padding-inline-start: 1em !important;
 }
 
+/* Pull the text closer to the bullet */
 .md-content .md-typeset li {
   margin-left: 0 !important;
 }
 
+/* Keep bullets outside so text doesn't wrap below */
 .md-content .md-typeset ul {
-  list-style-position: outside !important;
+  list-style-position: outside !important;  /* Changed from inside to outside */
 }
