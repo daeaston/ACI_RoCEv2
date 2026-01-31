@@ -193,10 +193,10 @@ Thank you for participating in this workshop. We hope you found it valuable and 
 
 ### Lab Summaries
 
-- **[Lab 1: Terraform Custom](lab-guides/lab1-terraform-custom/install-terraform.md)** - Custom HCL modules
-- **[Lab 2: Terraform NAC](lab-guides/lab2-terraform-nac/nac-setup.md)** - YAML-driven automation
-- **[Lab 3: Python](lab-guides/lab3-python/verify-python.md)** - Programmatic API access
-- **[Lab 4: Bruno](lab-guides/lab4-bruno/import-collection.md)** - Visual API client
+- **[Lab 1: Terraform Custom](lab-guides/lab1-terraform-custom/introduction-to-terraform.md)** - Custom HCL modules
+- **[Lab 2: Terraform NAC](lab-guides/lab2-terraform-nac/introduction-to-nac.md)** - YAML-driven automation
+- **[Lab 3: Python](lab-guides/lab3-python/python-overview.md)** - Programmatic API access
+- **[Lab 4: Bruno](lab-guides/lab4-bruno/bruno-overview.md)** - Visual API client
 - **[Lab 5: Ansible](lab-guides/lab5-ansible/ansible-overview.md)** - Procedural playbook orchestration
 
 Happy Automating! 🚀
