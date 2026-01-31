@@ -95,6 +95,7 @@ You will notice 1 extra automatically created file under /opt/nac/nac-aci-simple
 ```bash
 terraform destroy
 ```
+
 - Then select ‘yes’ when asked to Enter a value.  The changes should now be seen in the GUI:
 
 - Alternatively, **‘terraform destroy –-auto-approve’** can be used to skip the extra prompt:
