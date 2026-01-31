@@ -6,7 +6,7 @@ The NAC YAML file defines your network configuration in a declarative, human-rea
 
 ## Create the YAML Configuration
 
-Navigate into the data directory and create the ‘qos_rocev2.nac.yaml’ file
+- Navigate into the data directory and create the ‘qos_rocev2.nac.yaml’ file
 
 ```bash
 cd data
@@ -16,7 +16,7 @@ vi qos_rocev2.nac.yaml
 !!! tip "Vi Editor Tips"
     Press **i** to insert text, then copy and paste all the content below.
 
-Add the following content:
+- Add the following content:
 
 ```yaml
 ---
@@ -39,11 +39,11 @@ apic:
 
 ## Save the File
 
-Save the file by pressing **Esc**, then typing **:wq!**
+- Save the file by pressing **Esc**, then typing **:wq!**
 
 ## Verify the File
 
-Once outside the vi editor, the file can be verified by typing:
+- Once outside the vi editor, the file can be verified by typing:
 
 ```bash
 cat qos_rocev2.nac.yaml
