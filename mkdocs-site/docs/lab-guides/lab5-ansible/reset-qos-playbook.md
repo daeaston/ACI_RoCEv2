@@ -13,7 +13,7 @@ This playbook is useful for cleanup or returning to baseline configuration.
 
 ## Navigate to Playbooks Directory
 
-Navigate to the playbooks directory:
+- Navigate to the playbooks directory:
 
 ```bash
 cd ..
@@ -22,7 +22,7 @@ cd playbooks/
 
 ## Create the Playbook
 
-Create the `reset_qos.yml` playbook by executing `vi reset_qos.yml` and pasting the following content:
+- Create the `reset_qos.yml` playbook by executing `vi reset_qos.yml` and pasting the following content:
 
 ```bash
 vi reset_qos.yml
@@ -88,11 +88,11 @@ vi reset_qos.yml
 
 ## Save the File
 
-Save the file by pressing **Esc**, then typing **:wq!**
+- Save the file by pressing **Esc**, then typing **:wq!**
 
 ## Verify the File
 
-Once outside the vi editor, the file can be verified by typing:
+- Once outside the vi editor, the file can be verified by typing:
 
 ```bash
 cat reset_qos.yml
@@ -154,4 +154,5 @@ Extracts the authentication cookie for use in API calls.
 | Use Case | RoCEv2 optimization | Return to defaults |
 
 Proceed to [Login to APICs](../lab5-ansible/login-apics.md).
+
 
