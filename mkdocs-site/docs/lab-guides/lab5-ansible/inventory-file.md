@@ -33,11 +33,11 @@ apic_password=C1sco12345
 
 ## Save the File
 
-Save the file by pressing **Esc**, then typing **:wq!**
+- Save the file by pressing **Esc**, then typing **:wq!**
 
 ## Verify the File
 
-Once outside the vi editor, the script can be verified by typing:
+- Once outside the vi editor, the script can be verified by typing:
 
 ```bash
 cat inventory.ini
@@ -52,6 +52,7 @@ cat inventory.ini
 - **apic_username** and **apic_password** - Credentials for APIC authentication
 
 Proceed to [Group Variables File](../lab5-ansible/group-vars-file.md).
+
 
 
 
