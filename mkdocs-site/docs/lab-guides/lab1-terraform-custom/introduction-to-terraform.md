@@ -1,4 +1,4 @@
-# Lab 1: Opening APIC GUIs and Applying Terraform Commands
+# Lab 1: Terraform Classic
 
 ![Terraform Logo](../../assets/images/image040.png)
 
