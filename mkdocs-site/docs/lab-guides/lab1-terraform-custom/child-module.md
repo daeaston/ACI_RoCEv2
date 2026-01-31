@@ -6,7 +6,7 @@ In this section, you will create a reusable Terraform child module that implemen
 
 ## Create Module Directory
 
-Create the module directory structure:
+- Create the module directory structure:
 
 ```bash
 cd /opt/tf/terraform
@@ -18,7 +18,7 @@ cd rocev2_qos
 
 The child main.tf file contains the implementation logic for the RoCEv2 QoS configuration. While the root main.tf decides which APICs to target and how many times to call this module, the child main.tf defines what is built on the ACI fabric.
 
-Create the child main.tf file by executing the command ‘vi main.tf’ and pasting the following content:
+- Create the child main.tf file by executing the command ‘vi main.tf’ and pasting the following content:
 
 ```bash
 vi main.tf
@@ -29,7 +29,7 @@ vi main.tf
 !!! tip "Vi Editor Tips"
     Press **i** to insert text, then copy and paste all the content below.
 
-Define the module's input variables:
+- Define the module's input variables:
 
 ```hcl
 # Declaring the ACI Provider Requirement (ciscodevnet/aci), allowing it to be reused while clearly stating its dependency:
@@ -118,11 +118,11 @@ resource "null_resource" "reset_qos_apic1b" {
 
 ## Save the File
 
-Save the file by pressing **Esc**, then typing **:wq!**
+- Save the file by pressing **Esc**, then typing **:wq!**
 
 ## Verify the File
 
-Once outside the vi editor, the file can be verified by typing:
+- Once outside the vi editor, the file can be verified by typing:
 
 ```bash
 cat main.tf
@@ -132,7 +132,7 @@ cat main.tf
 
 This child variables.tf file defines the input parameters that the RoCEv2 QoS module expects from the root module. While the root variables.tf captures values from the lab user, the child variables.tf describes what this module needs to build the configuration on a given APIC.
 
-Create the child variables.tf file by executing the command ‘vi variables.tf’ and pasting the following content:
+- Create the child variables.tf file by executing the command ‘vi variables.tf’ and pasting the following content:
 
 ```bash
 vi variables.tf
@@ -141,7 +141,7 @@ vi variables.tf
 !!! tip "Vi Editor Tips"
     Press **i** to insert text, then copy and paste all the content below.
 
-Implement the RoCEv2 QoS resources:
+- Implement the RoCEv2 QoS resources:
 
 ```hcl
 #  Class of Service value (default cos3) used for no-drop RoCEv2 traffic, which is inserted into the XML payload for PFC:
@@ -171,11 +171,11 @@ variable "apic_url" {
 
 ## Save the File
 
-Save the file by pressing **Esc**, then typing **:wq!**
+- Save the file by pressing **Esc**, then typing **:wq!**
 
 ## Verify the File
 
-Once outside the vi editor, the file can be verified by typing:
+- Once outside the vi editor, the file can be verified by typing:
 
 ```bash
 cat variables.tf
