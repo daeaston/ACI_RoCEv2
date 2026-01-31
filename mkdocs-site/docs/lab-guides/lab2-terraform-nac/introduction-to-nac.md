@@ -1,4 +1,4 @@
-# NAC Environment Setup
+# Lab 2: Terraform NAC
 
 Cisco Netascode provides a higher-level, intent-driven approach to network automation. Instead of managing low-level Terraform resources and dependencies, engineers define the desired network state using structured inputs such as YAML, while Cisco-curated modules handle the underlying configuration.
 
