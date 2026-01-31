@@ -29,9 +29,9 @@ Open both APIC Simulators
 
 ## Executing the Python Script
 
-Open Command Prompt again from the Taskbar, change the directory to the Python Folder
+- Open Command Prompt again from the Taskbar, change the directory to the Python Folder
 
-Run the Python script to apply the configuration: **python rocev2_qos.py apply**
+- Run the Python script to apply the configuration: **python rocev2_qos.py apply**
 
 ```bash
 python rocev2_qos.py apply
@@ -39,17 +39,17 @@ python rocev2_qos.py apply
 
 ![python apply](../../assets/images/image050.png)
 
-Observe the changes in the APIC GUI:
+- Observe the changes in the APIC GUI:
 
 ![apic](../../assets/images/image043.png)
 
-Run the Python script to reset the configuration: **python rocev2_qos.py destroy**
+- Run the Python script to reset the configuration: **python rocev2_qos.py destroy**
 
 ```bash
 python rocev2_qos.py destroy
 ```
 
-Observe the APIC GUI reverting to its normal state:
+- Observe the APIC GUI reverting to its normal state:
 
 ![apic](../../assets/images/image042.png)
 
