@@ -13,6 +13,7 @@ cd ..
 mkdir scripts
 cd scripts
 ```
+
 - Create the reset_qos.sh script:
 
 ```bash
