@@ -37,10 +37,6 @@ The lab environment consists of a dual-fabric ACI deployment with the following 
 **Tools VM** - CentOS 7 Linux machine with automation tools
 
   - Login: `root` / `C1sco12345`
-  - Working directories:
-    - `/opt/tf` - Terraform custom modules
-    - `/opt/nac` - Terraform NAC configuration
-    - `/opt/ansible` - Ansible playbooks
 
 ### Step 2: Connect to the Workstation
 
