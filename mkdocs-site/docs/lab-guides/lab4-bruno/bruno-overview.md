@@ -1,4 +1,4 @@
-# Bruno Overview
+# Lab 4: Bruno
 
 ![Bruno](../../assets/images/image038.png)
 
