@@ -8,7 +8,7 @@ This main.tf file is the entry point for Terraform in the original NAC environme
 vi main.tf
 ```
 
-Completely overwrite the main.tf file that is directly underneath the nac-aci-simple-example folder with the content below to paste. 
+- Completely overwrite the main.tf file that is directly underneath the nac-aci-simple-example folder with the content below to paste. 
 
 !!! tip "Vi Editor Tips"
     Press **dd** to remove all text line for line, or hold **d** down to remove all lines quickly
@@ -104,11 +104,11 @@ resource "null_resource" "reset_qos_apic1b" {
 
 ## Save the File
 
-Save the file by pressing **Esc**, then typing **:wq!**
+- Save the file by pressing **Esc**, then typing **:wq!**
 
 ## Verify the File
 
-Once outside the vi editor, the file can be verified by typing:
+- Once outside the vi editor, the file can be verified by typing:
 
 ```bash
 cat main.tf
