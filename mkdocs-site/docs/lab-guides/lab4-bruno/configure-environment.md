@@ -20,10 +20,10 @@ Bruno environments allow you to store variables like URLs, credentials, and toke
 https://apic1-a.corp.pseudoco.com
 ```
 
-Click **'Save'** then **'Activate'**:
+- Click **'Save'** then **'Activate'**:
 
 ![Bruno](../../assets/images/image032.png)
 
 ## Next Steps
 
-Proceed to [Apply QoS Policy](apply-qos-policy.md) to execute the final steps.
+- Proceed to [Apply QoS Policy](apply-qos-policy.md) to execute the final steps.
