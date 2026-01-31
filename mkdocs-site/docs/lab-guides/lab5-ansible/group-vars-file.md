@@ -33,11 +33,11 @@ apic_url: "https://{{ inventory_hostname }}"
 
 ## Save the File
 
-Save the file by pressing **Esc**, then typing **:wq!**
+- Save the file by pressing **Esc**, then typing **:wq!**
 
 ## Verify the File
 
-Once outside the vi editor, the file can be verified by typing:
+- Once outside the vi editor, the file can be verified by typing:
 
 ```bash
 cat apic.yml
@@ -55,4 +55,5 @@ cat apic.yml
 This approach allows us to use a single variable definition that works for multiple APIC controllers without hardcoding specific URLs.
 
 Proceed to [Apply QoS Playbook](../lab5-ansible/apply-qos-playbook.md).
+
 
