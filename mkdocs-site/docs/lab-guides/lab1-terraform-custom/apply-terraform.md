@@ -35,7 +35,7 @@ In this final step of Lab 1, you will apply your Terraform configuration to depl
 
 ## Step 2: Execute Terraform Init
 
-Make sure you are in the /opt/tf/terraform directory, then issue the ‘terraform init’ command to initialize and set up the working directory by downloading the required providers, modules, and plugins so the configuration is ready to run.
+- Make sure you are in the /opt/tf/terraform directory, then issue the ‘terraform init’ command to initialize and set up the working directory by downloading the required providers, modules, and plugins so the configuration is ready to run.
 
 ```bash
 cd /opt/tf/terraform
@@ -46,7 +46,7 @@ Inclusive within the output <span class="tf-success">Terraform has been successf
 
 ## Step 3: Execute Terraform Plan
 
-Under the same directory, issue a ‘terraform plan’ to shows what changes Terraform will make by comparing the configuration to the current infrastructure and producing an execution plan.
+- Under the same directory, issue a ‘terraform plan’ to shows what changes Terraform will make by comparing the configuration to the current infrastructure and producing an execution plan.
 
 ```bash
 terraform plan
@@ -54,21 +54,21 @@ terraform plan
 
 The end of the output should display **‘Plan: 12 to add, 0 to change, 0 to destroy’** i.e. 5 of the same objects from each APIC
 
-Before the next section, move the ‘tools’ Putty session Window to a different area so that changes to the GUI can be seen when executing the ‘terraform apply’ and ‘terraform destroy’ commands:
+- Before the next section, move the ‘tools’ Putty session Window to a different area so that changes to the GUI can be seen when executing the ‘terraform apply’ and ‘terraform destroy’ commands:
 
 ![Terraform Plan](../../assets/images/image014.png)
 
 ## Step 4: Execute Terraform Apply
 
-Under the same directory, issue a ‘terraform apply’ to executes the planned changes and update the real infrastructure to match your Terraform configuration. 
+- Under the same directory, issue a ‘terraform apply’ to executes the planned changes and update the real infrastructure to match your Terraform configuration. 
 
 ```bash
 terraform apply
 ```
 
-Then select ‘yes’ when asked to Enter a value.  The changes should now be seen in the GUI:
+- Then select ‘yes’ when asked to Enter a value.  The changes should now be seen in the GUI:
 
-Alternatively, **‘terraform apply –auto-approve’** can be used to skip the extra prompt.
+- Alternatively, **‘terraform apply –auto-approve’** can be used to skip the extra prompt.
 
 ```bash
 terraform apply --auto-approve
@@ -84,7 +84,7 @@ If both tabs were to now be refreshed, the GUI at the top would now show that bo
 
 ![Terraform Managed](../../assets/images/image016.png)
 
-Now navigate back to /opt/tf/terraform, you will notice 1 extra automatically created file:
+- Now navigate back to /opt/tf/terraform, you will notice 1 extra automatically created file:
 
 ```bash
 cd /opt/tf/terraform/
@@ -94,15 +94,15 @@ cd /opt/tf/terraform/
 
 ## Step 5: Execute Terraform Destroy
 
-Under the same directory, issue a ‘terraform destroy’ to remove all infrastructure managed by the Terraform configuration, returning the environment to a clean state. The changes should now be seen in the GUI where each APIC are back to their original state:
+- Under the same directory, issue a ‘terraform destroy’ to remove all infrastructure managed by the Terraform configuration, returning the environment to a clean state. The changes should now be seen in the GUI where each APIC are back to their original state:
 
 ```bash
 terraform destroy
 ```
 
-Then select ‘yes’ when asked to Enter a value.  The changes should now be seen in the GUI:
+- Then select ‘yes’ when asked to Enter a value.  The changes should now be seen in the GUI:
 
-Alternatively, **‘terraform destroy –auto-approve’** can be used to skip the extra prompt:
+- Alternatively, **‘terraform destroy –auto-approve’** can be used to skip the extra prompt:
 
 ```bash
 terraform destroy --auto-approve
