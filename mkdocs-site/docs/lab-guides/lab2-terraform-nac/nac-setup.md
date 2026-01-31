@@ -36,7 +36,7 @@ In this lab, you will:
 
 ## Steps
 
-Navigate back to /opt/, then create a nac directory. This is where we will utilize a NAC Comparison.
+- Navigate back to /opt/, then create a nac directory. This is where we will utilize a NAC Comparison.
 
 ```bash
 cd /opt/
@@ -44,7 +44,7 @@ mkdir nac
 cd nac
 ```
 
-Clone the Netascode ACI simple example repository:
+- Clone the Netascode ACI simple example repository:
 
 ```bash
 git clone https://github.com/netascode/nac-aci-simple-example.git
@@ -52,7 +52,7 @@ git clone https://github.com/netascode/nac-aci-simple-example.git
 
 (Output will show cloning progress.)
 
-Navigate into the cloned directory:
+- Navigate into the cloned directory:
 
 ```bash
 cd nac-aci-simple-example/
