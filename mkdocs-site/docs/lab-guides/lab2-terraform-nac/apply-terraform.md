@@ -32,7 +32,7 @@ In this final step of Lab 2, you will deploy the NAC YAML configuration to both 
 
 ## Step 2: Execute Terraform Init
 
-Navigate back to /opt/nac/nac-aci-simple-example, then issue the ‘terraform init’ command to initialize and set up the working directory by downloading the required providers, modules, and plugins so the configuration is ready to run.
+- Navigate back to /opt/nac/nac-aci-simple-example, then issue the ‘terraform init’ command to initialize and set up the working directory by downloading the required providers, modules, and plugins so the configuration is ready to run.
 
 ```bash
 cd /opt/nac/nac-aci-simple-example/
@@ -43,7 +43,7 @@ Inclusive within the output <span class="tf-success">Terraform has been successf
 
 ## Step 3: Execute Terraform Plan
 
-Under the same directory, issue a ‘terraform plan’ to show what changes Terraform will make by comparing the configuration to the current infrastructure and producing an execution plan.
+- Under the same directory, issue a ‘terraform plan’ to show what changes Terraform will make by comparing the configuration to the current infrastructure and producing an execution plan.
 
 ```bash
 terraform plan
@@ -59,15 +59,15 @@ Before the next section, move the ‘tools’ Putty session Window to a differen
 
 ## Step 4: Execute Terraform Apply
 
-Under the same directory, issue a ‘terraform apply’ to executes the planned changes and update the real infrastructure to match your Terraform configuration. 
+- Under the same directory, issue a ‘terraform apply’ to executes the planned changes and update the real infrastructure to match your Terraform configuration. 
 
 ```bash
 terraform apply
 ```
 
-Then select ‘yes’ when asked to Enter a value.  The changes should now be seen in the GUI:
+- Then select ‘yes’ when asked to Enter a value.  The changes should now be seen in the GUI:
 
-Alternatively, **‘terraform apply –auto-approve’** can be used to skip the extra prompt:
+- Alternatively, **‘terraform apply –auto-approve’** can be used to skip the extra prompt:
 
 ```bash
 terraform apply --auto-approve
@@ -88,14 +88,14 @@ You will notice 1 extra automatically created file under /opt/nac/nac-aci-simple
 
 ## Step 5: Execute Terraform Destroy
 
-Under the same directory, issue a ‘terraform destroy’ to remove all infrastructure managed by the Terraform configuration, returning the environment to a clean state. The changes should now be seen in the GUI where each APIC are back to their original state.
+- Under the same directory, issue a ‘terraform destroy’ to remove all infrastructure managed by the Terraform configuration, returning the environment to a clean state. The changes should now be seen in the GUI where each APIC are back to their original state.
 
 ```bash
 terraform destroy
 ```
-Then select ‘yes’ when asked to Enter a value.  The changes should now be seen in the GUI:
+- Then select ‘yes’ when asked to Enter a value.  The changes should now be seen in the GUI:
 
-Alternatively, **‘terraform destroy –-auto-approve’** can be used to skip the extra prompt:
+- Alternatively, **‘terraform destroy –-auto-approve’** can be used to skip the extra prompt:
 
 ```bash
 terraform destroy --auto-approve
