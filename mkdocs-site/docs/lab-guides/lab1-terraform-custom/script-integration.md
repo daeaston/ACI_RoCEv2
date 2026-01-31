@@ -17,7 +17,7 @@ In this section, you will create helper scripts to streamline Terraform operatio
 
 ## Create Cleanup Script
 
-Create a scripts folder and script file to destroy the Terraform-managed infrastructure:
+- Create a scripts folder and script file to destroy the Terraform-managed infrastructure:
 
 ```bash
 cd /opt/tf/terraform
@@ -29,7 +29,7 @@ vi reset_qos.sh
 !!! tip "Vi Editor Tips"
     Press **i** to insert text, then copy and paste all the content below.
 
-Add the following content:
+- Add the following content:
 
 ```bash
 #!/bin/bash
@@ -75,17 +75,17 @@ echo "Reset complete."
 
 ## Save the File
 
-Save the file by pressing **Esc**, then typing **:wq!**
+- Save the file by pressing **Esc**, then typing **:wq!**
 
 ## Verify the File
 
-Once outside the vi editor, the file can be verified by typing:
+- Once outside the vi editor, the file can be verified by typing:
 
 ```bash
 cat reset_qos.sh
 ```
 
-Make the script executable:
+- Make the script executable:
 
 ```bash
 chmod +x reset_qos.sh
