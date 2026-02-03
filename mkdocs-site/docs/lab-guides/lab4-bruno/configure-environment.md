@@ -14,7 +14,7 @@ Bruno environments allow you to store variables like URLs, credentials, and toke
 
 ![Bruno](../../assets/images/image031.png)
 
-- Click **'+ Add Variable'**, ensure **'Enabled'** is already selected, then **‘base_url’** again as the Name, then copy and paste the Value of **‘https://apic1-a.corp.pseudoco.com’** below:
+- Click **'+ Add Variable'**, ensure **'Enabled'** is already selected, then **‘base_url’** again as the Name, then type the **Value** of **‘https://apic1-a.corp.pseudoco.com’** below (unfortunately copy & paste does not work for this):
   
 ```bash
 https://apic1-a.corp.pseudoco.com
