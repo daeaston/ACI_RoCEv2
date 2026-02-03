@@ -14,7 +14,6 @@ In this section, you will install Terraform on the CentOS 7 Tools VM. Terraform 
 - First, navigate to the working directory and download the Terraform binary:
 
 ```bash
-cd /opt/tf
 wget https://releases.hashicorp.com/terraform/1.14.0/terraform_1.14.0_linux_amd64.zip
 ```
 
