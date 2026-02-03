@@ -42,7 +42,7 @@ on linux_amd64
 ```
 
 !!! success "Installation Complete"
-    Terraform is now installed and ready to use! A more verbose output of this can be seen in **Appendix A**. If you are advised the version is out of date you can simply ignore 🙂.
+    Terraform is now installed and ready to use! A more verbose output of this can be seen in [**Appendix A**](appendicies.md). If you are advised the version is out of date you can simply ignore 🙂.
 
 ## Next Steps
 
