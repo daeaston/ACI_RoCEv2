@@ -159,4 +159,4 @@ nav:
     - Login to APICs: lab-guides/lab5-ansible/login-apics.md
     - Run Playbooks: lab-guides/lab5-ansible/run-playbooks.md
   - Conclusion: Conclusion.md
-  - Appendicies: appendicies.md
+  - Appendices: appendicies.md
