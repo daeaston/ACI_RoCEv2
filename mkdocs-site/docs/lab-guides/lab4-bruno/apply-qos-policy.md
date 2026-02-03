@@ -46,7 +46,7 @@ Open both APIC Simulators
 ![Bruno](../../assets/images/image036.png)
 
 !!! tip "Optional"
-    Please refer to **Appendix C** to review full .json file along with its explaination.
+    Please refer to [**Appendix C**](/ACI_RoCEv2/appendicies/#appendix-c-bruno-json-script-explaination) to review full .json file along with its explaination.
 
 ## Lab 4 Complete!
 
