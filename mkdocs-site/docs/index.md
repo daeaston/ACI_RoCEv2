@@ -66,7 +66,7 @@
 
 ### [Conclusion](Conclusion.md)
 
-### [Appendicies](appendicies.md)
+### [Appendices](appendices.md)
 
 ---
 
