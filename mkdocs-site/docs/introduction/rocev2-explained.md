@@ -42,7 +42,7 @@ In short, RoCEv2 turns the network into a core part of the AI stack, ensuring ex
 
 - [Cisco APIC and QoS](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/kb/Cisco-APIC-and-QoS.html)
 - [ACI RoCEv2 Settings](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/kb/Cisco-APIC-and-QoS.html#id_77213)
-- [Wikipedia RoCE Description)](https://en.wikipedia.org/wiki/RDMA_over_Converged_Ethernet?utm_source=chatgpt.com)
+- [Wikipedia RoCE Description](https://en.wikipedia.org/wiki/RDMA_over_Converged_Ethernet?utm_source=chatgpt.com)
 - [Youtube Video describing RoCEv2](https://www.youtube.com/watch?v=nKz92Yr09q8)
 
 ---
