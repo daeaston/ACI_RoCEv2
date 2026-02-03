@@ -27,16 +27,9 @@ inflating: terraform
 git            git-receive-pack    git-upload-pack  minikube
 git-cvsserver  git-shell           kubect           terraform
 gitk           git-upload-archive  kubectl
-[root@centos7-tools1 bin]# cd terraform
--bash: cd: terraform: Not a directory
-[root@centos7-tools1 bin]# cd terraform/
--bash: cd: terraform/: Not a directory
 [root@centos7-tools1 bin]# terraform --version
 Terraform v1.14.0
 on linux_amd64
-[root@centos7-tools1 bin]#
-[root@centos7-tools1 opt]# cd /opt
-[root@centos7-tools1 opt]#
 ```
 
 ## Appendix B  - Python Script Explaination
