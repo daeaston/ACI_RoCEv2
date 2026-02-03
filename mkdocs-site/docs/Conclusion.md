@@ -201,4 +201,4 @@ Thank you for participating in this workshop. We hope you found it valuable and 
 
 Happy Automating! 🚀
 
-**Optional:** Proceed to the [Appendicies](appendicies.md)
+**Optional:** Proceed to the [Appendices](appendices.md)
