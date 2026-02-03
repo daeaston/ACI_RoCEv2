@@ -1,4 +1,4 @@
-# Appendicies
+# Appendices
 
 ## Appendix A  - Terraform Installation
 
