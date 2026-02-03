@@ -105,11 +105,11 @@ The automation files are organized as follows:
 
 You're now ready to start the labs! Choose your path:
 
-- **[Lab 1: Terraform Custom Module](../lab-guides/lab1-terraform-custom/introduction-to-terraform.md)** - Build Terraform modules from scratch
+- **[Lab 1: Terraform Classic](../lab-guides/lab1-terraform-custom/introduction-to-terraform.md)** - Build Terraform modules from scratch
 - **[Lab 2: Terraform NAC](../lab-guides/lab2-terraform-nac/introduction-to-nac.md)** - Use Network as Code approach
-- **[Lab 3: Python Automation](../lab-guides/lab3-python/python-overview.md)** - Python SDK automation
-- **[Lab 4: Bruno API](../lab-guides/lab4-bruno/bruno-overview.md)** - REST API automation
-- **[Lab 5: Ansible Playbooks](../lab-guides/lab5-ansible/ansible-overview.md)** - Build Ansible modules from scratch
+- **[Lab 3: Python](../lab-guides/lab3-python/python-overview.md)** - Python SDK automation
+- **[Lab 4: Bruno](../lab-guides/lab4-bruno/bruno-overview.md)** - REST API automation
+- **[Lab 5: Ansible](../lab-guides/lab5-ansible/ansible-overview.md)** - Build Ansible modules from scratch
 
 !!! tip "Flexible Learning Path"
     While the labs are designed to be completed in sequence, each lab is self-contained. Feel free to jump to the sections that interest you the most!
