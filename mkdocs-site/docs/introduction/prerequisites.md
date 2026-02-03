@@ -39,11 +39,11 @@ The lab environment provides all necessary software pre-installed:
 ## Estimated Time
 
 - **Total Workshop Duration:** 70 minutes
-- **Lab 1 (Terraform Classic):** 20 minutes
-- **Lab 2 (Terraform NAC):** 15 minutes
-- **Lab 3 (Python):** 10 minutes
-- **Lab 4 (Bruno API):** 10 minutes
-- **Lab 5 (Ansible Playbooks):** 15 minutes
+- **Lab 1 Terraform Classic:** 20 minutes
+- **Lab 2 Terraform NAC:** 15 minutes
+- **Lab 3 Python:** 10 minutes
+- **Lab 4 Bruno API:** 10 minutes
+- **Lab 5 Ansible Playbooks:** 15 minutes
 
 !!! tip "Lab Flexibility"
     Each lab is self-contained. You can complete them in order or jump to specific sections based on your interests and time availability. Doing the Terraform Custom module first
