@@ -190,7 +190,7 @@ def apply_rocev2_qos(apic_url, cookie):
     headers = {"Content-Type": "application/xml"}
 
     data = """<qosClass admin="enabled" dn="uni/infra/qosinst-default/class-level2" prio="level2">
-  <qosCong algo="wred" wredMaxThreshold="60" wredMinThreshold="40" wredProbability="0" ecn="enabled" forwardNonEcn="enabled"/>
+  <qosCong algo="wred" wredMaxThreshold="60" wredMinThreshold="40" wredProbability="10" ecn="enabled" forwardNonEcn="enabled"/>
   <qosPfcPol name="default" noDropCos="cos3" adminSt="yes" enableScope="fabric"/>
   <qosSched bw="60"/>
 </qosClass>"""
@@ -542,7 +542,7 @@ This Bruno/Postman collection provides a lightweight, GUI-based method to config
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "<qosClass admin=\"enabled\" dn=\"uni/infra/qosinst-default/class-level2\" prio=\"level2\">\n  <qosCong algo=\"wred\" wredMaxThreshold=\"60\" wredMinThreshold=\"40\" wredProbability=\"0\" ecn=\"enabled\" forwardNonEcn=\"enabled\"/>\n  <qosPfcPol name=\"default\" noDropCos=\"cos3\" adminSt=\"yes\" enableScope=\"fabric\"/>\n <qosSched bw=\"60\"/>\n</qosClass>"
+					"raw": "<qosClass admin=\"enabled\" dn=\"uni/infra/qosinst-default/class-level2\" prio=\"level2\">\n  <qosCong algo=\"wred\" wredMaxThreshold=\"60\" wredMinThreshold=\"40\" wredProbability=\"10\" ecn=\"enabled\" forwardNonEcn=\"enabled\"/>\n  <qosPfcPol name=\"default\" noDropCos=\"cos3\" adminSt=\"yes\" enableScope=\"fabric\"/>\n <qosSched bw=\"60\"/>\n</qosClass>"
 				},
 				"url": {
 					"raw": "{{base_url}}/api/node/mo/uni/infra/qosinst-default/class-level2.xml",
