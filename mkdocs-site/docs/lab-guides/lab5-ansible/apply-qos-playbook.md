@@ -68,7 +68,7 @@ vi rocev2_qos.yml
           Cookie: "APIC-cookie={{ apic_cookie }}"
         body: |
           <qosClass admin="enabled" dn="uni/infra/qosinst-default/class-level2" prio="level2">
-            <qosCong algo="wred" wredMinThreshold="40" wredMaxThreshold="60" wredProbability="0" ecn="enabled" forwardNonEcn="enabled"/>
+            <qosCong algo="wred" wredMinThreshold="40" wredMaxThreshold="60" wredProbability="10" ecn="enabled" forwardNonEcn="enabled"/>
             <qosPfcPol name="default" noDropCos="cos3" adminSt="yes" enableScope="fabric"/>
             <qosSched bw="60"/>
           </qosClass>
@@ -148,4 +148,5 @@ cat rocev2_qos.yml
 | **Bandwidth** | 60% | Guaranteed bandwidth for Level 2 traffic |
 
 Proceed to [Reset QoS Playbook](../lab5-ansible/reset-qos-playbook.md).
+
 
