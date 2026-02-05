@@ -62,7 +62,7 @@ resource "aci_rest_managed" "qos_class_congestion" {
     algo             = "wred"
     wredMaxThreshold = "60"
     wredMinThreshold = "40"
-    wredProbability  = "0"
+    wredProbability  = "10"
     ecn              = "enabled"
     forwardNonEcn    = "enabled"
   }
