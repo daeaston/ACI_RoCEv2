@@ -25,10 +25,11 @@ Before beginning this workshop, participants should have:
 
 The lab environment provides all necessary software pre-installed:
 
-- **Terraform** (will be installed in Lab 1)
-- **Python 3.x** with pip package manager
-- **Bruno** API client
-- **Ansible** alternative to Terraform
+- **Terraform 1.14.0** (will be installed in Lab 1)
+- **Python 3.11.1** with pip package manager
+- **Bruno 3.0.2** API client
+- **Ansible 2.8.1** alternative to Terraform
+- **ACI 5.2(7f)** (The Demo at the end uses 6.1(4h))
 
 ## Optional Resources
 
