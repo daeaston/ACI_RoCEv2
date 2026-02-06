@@ -92,6 +92,9 @@ cat rocev2_qos.yml
 
 ## Understanding the Playbook
 
+!!! warning "Warning"
+    The rest of this page provides an explanation of the script already included above, so no additional content needs to be copied or pasted below.
+
 ### Play Definition
 ```yaml
 - name: Apply RoCEv2 QoS Config to ACI
@@ -148,5 +151,6 @@ cat rocev2_qos.yml
 | **Bandwidth** | 60% | Guaranteed bandwidth for Level 2 traffic |
 
 Proceed to [Reset QoS Playbook](../lab5-ansible/reset-qos-playbook.md).
+
 
 
