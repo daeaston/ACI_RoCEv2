@@ -98,6 +98,9 @@ vi reset_qos.yml
 cat reset_qos.yml
 ```
 
+!!! warning "Warning"
+    The rest of this page provides an explanation of the script already included above, so no additional content needs to be copied or pasted below.
+
 ## Understanding the Playbook
 
 ### Play Definition
@@ -154,5 +157,6 @@ Extracts the authentication cookie for use in API calls.
 | Use Case | RoCEv2 optimization | Return to defaults |
 
 Proceed to [Login to APICs](../lab5-ansible/login-apics.md).
+
 
 
