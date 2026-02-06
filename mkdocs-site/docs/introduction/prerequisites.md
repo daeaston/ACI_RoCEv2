@@ -29,7 +29,7 @@ The lab environment provides all necessary software pre-installed:
 - **Python 3.11.1** with pip package manager
 - **Bruno 3.0.2** API client
 - **Ansible 2.8.1** alternative to Terraform
-- **ACI 5.2(7f)** (The Demo at the end uses 6.1(4h))
+- **ACI 5.2(7f)** (The Demo at the end uses **6.1(4h)**)
 
 ## Optional Resources
 
