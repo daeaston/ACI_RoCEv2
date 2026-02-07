@@ -18,7 +18,7 @@ This YAML file defines the RoCEv2 QoS policy in a declarative way for the Netasc
 
 - **wred_min_threshold: 40** → start threshold (e.g. 40%)
 - **wred_max_threshold: 60** → max threshold (e.g. 60%)
-- **wred_probability: 0** → drop/mark probability at those thresholds
+- **wred_probability: 10** → drop/mark probability at those thresholds
 
 **ecn: true** Enables Explicit Congestion Notification, mapping to ecn = "enabled". This means congestion can be signalled via ECN marks rather than relying only on packet drops.
 
