@@ -102,6 +102,10 @@ bash reset_qos.sh https://apic1-a.corp.pseudoco.com
 bash reset_qos.sh https://apic1-b.corp.pseudoco.com 
 ```
 
+The result output will appear as below:
+
+![OUTPUT](../../assets/images/image051.png)
+
 This ensures that any RoCEv2-specific configuration applied by the lab is removed cleanly.
 Cleaning Up the Cookie File and Exiting: The temporary cookie file is deleted, and a completion message is printed.
 
