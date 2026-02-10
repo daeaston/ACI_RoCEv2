@@ -62,7 +62,7 @@ def apply_rocev2_qos(apic_url, cookie):
     headers = {"Content-Type": "application/xml"}
 
     data = """<qosClass admin="enabled" dn="uni/infra/qosinst-default/class-level2" prio="level2">
-  <qosCong algo="wred" wredMaxThreshold="60" wredMinThreshold="40" wredProbability="0" ecn="enabled" forwardNonEcn="enabled"/>
+  <qosCong algo="wred" wredMaxThreshold="60" wredMinThreshold="40" wredProbability="10" ecn="enabled" forwardNonEcn="enabled"/>
   <qosPfcPol name="default" noDropCos="cos3" adminSt="yes" enableScope="fabric"/>
   <qosSched bw="60"/>
 </qosClass>"""
